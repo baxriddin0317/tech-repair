@@ -908,8 +908,19 @@
                   >
                 </label>
 
-                <label class="flex items-center gap-3.5 mt-7.5 cursor-pointer">
-                  <input type="checkbox" checked class="size-6.5 accent-brand-red">
+                <label for="policy-consent" class="flex items-center gap-3.5 mt-7.5 cursor-pointer">
+                  <input id="policy-consent" type="checkbox" class="peer sr-only">
+                  <span class="size-6.5 border border-[#D9D9E9] bg-white grid place-items-center shrink-0 peer-checked:border-brand-red peer-checked:[&_.check]:opacity-100">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      class="check w-3.5 h-3.5 text-brand-red opacity-0 transition-opacity "
+                      aria-hidden="true"
+                    >
+                      <path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
                   <span class="text-brand-gray-3 text-sm leading-4.5 tracking-[0.2px]">
                     Нажимая кнопку, я выражаю согласие с
                     <a href="#" class="block text-brand-red hover:underline">Политикой обработки персональных данных.</a>
