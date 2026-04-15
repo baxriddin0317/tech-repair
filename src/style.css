@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+
+@layer components {
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 xl:px-15;
+  }
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+}
+
+
+@theme {
+    /* colors */
+    --color-brand-red: #FE5364;
+    --color-brand-red-2: #FF7B7F;
+    --color-brand-black: #0F172A;
+    --color-brand-black-2: #1C1E24;
+    --color-brand-gray: #83858E;
+    --color-brand-gray-2: #ECEDF4;
+    --color-brand-gray-3: #62646C;
+    --color-brand-gray-4: #F6F6FD;
+    --color-brand-softWhite: #F9F9FF;
+    --color-brand-brown: #8D684D;
+    --color-brand-yellow: #FFE942;
+    
+
+    --font-inter: "Inter 18pt", sans-serif;
+    --font-marope: "Manrope", sans-serif;
+    --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+
+    /* border radius */
+    --radius-main: 10px;
+
+    /* gradient */
+    --background-image-brand-gradient:
+      linear-gradient(0deg, #ffe942 0%, #ffe942 100%),
+      linear-gradient(276deg, rgba(98, 226, 255, 0.9) -57.59%, rgba(98, 226, 255, 0) 84.21%),
+      linear-gradient(0deg, #7279ff 0%, #7279ff 100%),
+      linear-gradient(276deg, #62e2ff -87.36%, rgba(98, 226, 255, 0) 52.91%),
+      linear-gradient(0deg, #c186e4 0%, #c186e4 100%),
+      linear-gradient(278deg, rgba(103, 205, 228, 0.58) -9.78%, rgba(103, 205, 228, 0) 72.01%);
+    
+    --background-image-brand-hero-gradient: linear-gradient(180deg, #F4F4FF 0%, #FFF 100%);
+}
+
+/*  */
+@layer utilities {
+  .bg-brand-gradient {
+    background-color: #34ccad;
+  }
+
+  .bg-brand-hero-gradient {
+    background-color: #F9F9FF;
+  }
+}
+
+
+
+/* fonts */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../public/fonts/manrope/Manrope-Bold.woff2') format('woff2'),
+        url('../public/fonts/manrope/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../public/fonts/manrope/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../public/fonts/manrope/Manrope-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../public/fonts/manrope/Manrope-ExtraLight.woff2') format('woff2'),
+        url('../public/fonts/manrope/Manrope-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../public/fonts/manrope/Manrope-Light.woff2') format('woff2'),
+        url('../public/fonts/manrope/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../public/fonts/manrope/Manrope-Medium.woff2') format('woff2'),
+        url('../public/fonts/manrope/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../public/fonts/manrope/Manrope-Regular.woff2') format('woff2'),
+        url('../public/fonts/manrope/Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../public/fonts/manrope/Manrope-SemiBold.woff2') format('woff2'),
+        url('../public/fonts/manrope/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('../public/fonts/inter/Inter18pt-Medium.woff2') format('woff2'),
+        url('../public/fonts/inter/Inter18pt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('../public/fonts/inter/Inter18pt-Bold.woff2') format('woff2'),
+        url('../public/fonts/inter/Inter18pt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('../public/fonts/inter/Inter18pt-Regular.woff2') format('woff2'),
+        url('../public/fonts/inter/Inter18pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('../public/fonts/inter/Inter18pt-SemiBold.woff2') format('woff2'),
+        url('../public/fonts/inter/Inter18pt-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('../public/fonts/inter/Inter18pt-Thin.woff2') format('woff2'),
+        url('../public/fonts/inter/Inter18pt-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('../public/fonts/inter/Inter18pt-Light.woff2') format('woff2'),
+        url('../public/fonts/inter/Inter18pt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 18pt';
+    src: url('../public/fonts/inter/Inter18pt-Italic.woff2') format('woff2'),
+        url('../public/fonts/inter/Inter18pt-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

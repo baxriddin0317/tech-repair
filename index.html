@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Tech Repair — ремонт техники в Новосибирске</title>
+  </head>
+  <body class="bg-white text-gray-900 antialiased">
+    <!-- header -->
+    <header class="bg-white">
+      <div class="page-container">
+        <!-- Верхняя полоса: бренд → адрес → телефон → соцсети и кнопка -->
+        <div class="flex flex-row flex-wrap items-center justify-between gap-x-6 gap-y-3 py-4.5">
+          <!-- Логотип и слоган -->
+          <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+            <div class="flex gap-1 shrink-0 items-baseline font-plus-jakarta-sans tracking-tight">
+              <span class="text-brand-black text-2xl font-extrabold">Tech</span>
+              <span class="text-brand-red text-2xl font-semibold">Repair</span>
+            </div>
+            
+            <div class="hidden xl:block text-sm font-inter leading-snug text-brand-gray tracking-[0.14px]">
+              <p>Срочный ремонт техники</p>
+              <p>в Новосибирске</p>
+            </div>
+          </div>
+
+          <!-- Адрес -->
+          <div class="flex flex-col items-start">
+            <div class="flex items-center gap-2">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
+                  <path d="M5.92917 16.8631C6.43417 17.2683 6.96083 17.6386 7.5 18C8.04033 17.6434 8.56444 17.2641 9.07083 16.8631C9.915 16.1892 10.7095 15.4584 11.4483 14.6761C13.1517 12.8651 15 10.2398 15 7.2927C15 6.33501 14.806 5.38669 14.4291 4.5019C14.0522 3.61711 13.4997 2.81317 12.8033 2.13598C12.1069 1.45879 11.2801 0.921616 10.3701 0.555124C9.46018 0.188631 8.48491 0 7.5 0C6.51509 0 5.53982 0.188631 4.62987 0.555124C3.71993 0.921616 2.89314 1.45879 2.1967 2.13598C1.50026 2.81317 0.947814 3.61711 0.570903 4.5019C0.193993 5.38669 -1.46764e-08 6.33501 0 7.2927C0 10.2398 1.84833 12.8643 3.55167 14.6761C4.29052 15.4586 5.08497 16.1889 5.92917 16.8631ZM7.5 9.92617C6.78171 9.92617 6.09283 9.64872 5.58492 9.15485C5.07701 8.66097 4.79167 7.99114 4.79167 7.2927C4.79167 6.59426 5.07701 5.92442 5.58492 5.43055C6.09283 4.93668 6.78171 4.65922 7.5 4.65922C8.21829 4.65922 8.90717 4.93668 9.41508 5.43055C9.92299 5.92442 10.2083 6.59426 10.2083 7.2927C10.2083 7.99114 9.92299 8.66097 9.41508 9.15485C8.90717 9.64872 8.21829 9.92617 7.5 9.92617Z" fill="#FE5364"/>
+                </svg>
+              </span>
+              <p class="font-semibold text-brand-black tracking-[0.16px] leading-5.5">Новосибирск</p>
+            </div>
+            <p class="text-sm leading-normal text-brand-gray tracking-[0.14px]">ул. Секретная, д. 1, офис 200</p>
+          </div>
+
+          <!-- Телефон -->
+          <div class="flex items-center gap-3 lg:gap-5">
+            <div class="flex flex-col items-end justify-end">
+              <div class="flex items-center gap-2">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.04728 0.9375H5.86053C5.97494 0.9375 6.08663 0.972391 6.18071 1.03752C6.27478 1.10264 6.34675 1.19491 6.38702 1.302L7.47903 4.2045C7.51502 4.30049 7.52409 4.40448 7.50528 4.50525L6.95778 7.43925C7.63053 9.02025 8.74127 10.083 10.5825 11.0363L13.4813 10.4738C13.5843 10.4539 13.6908 10.4633 13.7888 10.5008L16.7003 11.6108C16.8067 11.6513 16.8983 11.7232 16.963 11.8169C17.0277 11.9107 17.0624 12.0219 17.0625 12.1357V14.8237C17.0625 16.0432 15.9885 17.0325 14.7315 16.7587C12.4418 16.2607 8.19902 14.994 5.22752 12.0225C2.38052 9.17625 1.42652 5.24475 1.10628 3.12C0.922525 1.9065 1.89528 0.9375 3.04728 0.9375Z" fill="#FE5364"/>
+                  </svg>
+                </span>
+                <p class="font-semibold text-lg text-brand-black tracking-[0.16px]">+7 (900) 123 45 67</p>
+              </div>
+              <a href="tel:+79001234567" class="text-xs font-medium text-brand-red transition hover:text-brand-red-hover hover:underline">Заказать звонок</a>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <a
+                href="#"
+                class="inline-flex size-11 items-center justify-center rounded-main bg-brand-gray-2 text-gray-700 transition hover:bg-[#E8E3F5]"
+                aria-label="Telegram"
+              >
+                <span class="icon-slot inline-flex items-center justify-center" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_1_161)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7767 4.43C18.0238 4.32599 18.2943 4.29012 18.5599 4.32612C18.8256 4.36211 19.0768 4.46867 19.2873 4.63468C19.4979 4.8007 19.6601 5.02011 19.757 5.27008C19.854 5.52005 19.8822 5.79144 19.8387 6.056L17.5707 19.813C17.3507 21.14 15.8947 21.901 14.6777 21.24C13.6597 20.687 12.1477 19.835 10.7877 18.946C10.1077 18.501 8.02465 17.076 8.28065 16.062C8.50065 15.195 12.0007 11.937 14.0007 10C14.7857 9.239 14.4277 8.8 13.5007 9.5C11.1987 11.238 7.50265 13.881 6.28065 14.625C5.20265 15.281 4.64065 15.393 3.96865 15.281C2.74265 15.077 1.60565 14.761 0.677653 14.376C-0.576346 13.856 -0.515346 12.132 0.676654 11.63L17.7767 4.43Z" fill="#0F172A"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_161">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="inline-flex size-11 items-center justify-center rounded-main bg-brand-gray-2 text-gray-700 transition hover:bg-[#E8E3F5]"
+                aria-label="WhatsApp"
+              >
+                <span class="icon-slot inline-flex items-center justify-center" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12.001 2C17.524 2 22.001 6.477 22.001 12C22.001 17.523 17.524 22 12.001 22C10.2337 22.003 8.49757 21.5353 6.97099 20.645L2.00499 22L3.35699 17.032C2.46595 15.5049 1.99789 13.768 2.00099 12C2.00099 6.477 6.47799 2 12.001 2ZM8.59299 7.3L8.39299 7.308C8.26368 7.31691 8.13734 7.35087 8.02099 7.408C7.91257 7.46951 7.81355 7.5463 7.72699 7.636C7.60699 7.749 7.53899 7.847 7.46599 7.942C7.09611 8.4229 6.89696 9.01331 6.89999 9.62C6.90199 10.11 7.02999 10.587 7.22999 11.033C7.63899 11.935 8.31199 12.89 9.19999 13.775C9.41399 13.988 9.62399 14.202 9.84999 14.401C10.9534 15.3724 12.2683 16.073 13.69 16.447L14.258 16.534C14.443 16.544 14.628 16.53 14.814 16.521C15.1052 16.5056 15.3895 16.4268 15.647 16.29C15.7778 16.2223 15.9056 16.1489 16.03 16.07C16.03 16.07 16.0723 16.0413 16.155 15.98C16.29 15.88 16.373 15.809 16.485 15.692C16.569 15.6053 16.639 15.5047 16.695 15.39C16.773 15.227 16.851 14.916 16.883 14.657C16.907 14.459 16.9 14.351 16.897 14.284C16.893 14.177 16.804 14.066 16.707 14.019L16.125 13.758C16.125 13.758 15.255 13.379 14.723 13.137C14.6673 13.1128 14.6077 13.0989 14.547 13.096C14.4786 13.0888 14.4094 13.0965 14.3442 13.1184C14.279 13.1403 14.2192 13.176 14.169 13.223C14.164 13.221 14.097 13.278 13.374 14.154C13.3325 14.2098 13.2753 14.2519 13.2098 14.2751C13.1443 14.2982 13.0733 14.3013 13.006 14.284C12.9408 14.2666 12.877 14.2446 12.815 14.218C12.691 14.166 12.648 14.146 12.563 14.11C11.9889 13.8599 11.4574 13.5215 10.988 13.107C10.862 12.997 10.745 12.877 10.625 12.761C10.2316 12.3842 9.88874 11.958 9.60499 11.493L9.54599 11.398C9.50425 11.3338 9.47003 11.265 9.44399 11.193C9.40599 11.046 9.50499 10.928 9.50499 10.928C9.50499 10.928 9.74799 10.662 9.86099 10.518C9.97099 10.378 10.064 10.242 10.124 10.145C10.242 9.955 10.279 9.76 10.217 9.609C9.93699 8.925 9.64766 8.24467 9.34899 7.568C9.28999 7.434 9.11499 7.338 8.95599 7.319C8.90199 7.31233 8.84799 7.307 8.79399 7.303C8.65972 7.2953 8.52508 7.29664 8.39099 7.307L8.59299 7.3Z" fill="#0F172A"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Соцсети и CTA -->
+          <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+            <a
+              href="#order"
+              class="inline-flex items-center justify-center rounded-main bg-brand-gradient py-3.5 px-9"
+              >
+                <span class="text-brand-black font-semibold leading-5.5 text-center tracking-[0.16px]">Заказать ремонт</span>
+              </a
+            >
+          </div>
+        </div>
+
+        <!-- Навигация: категории слева, о компании справа -->
+        <nav
+          class="flex flex-wrap items-center justify-between gap-x-6 gap-y-4 py-4"
+          aria-label="Основная навигация"
+        >
+          <ul class="flex flex-wrap items-center gap-x-5 sm:gap-x-7.5">
+            <li>
+              <a href="#smartphones" class="group flex items-center gap-2.5 font-semibold text-brand-black tracking-[0.16px] leading-5.5">
+                <span class="icon-slot inline-flex shrink-0 items-center justify-center text-[#E94E59]" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect x="4" width="16" height="24" rx="3" fill="#FE5364"/>
+                    <rect x="9" y="2" width="6" height="1" fill="#F3F3FB"/>
+                  </svg>
+                </span>
+                Смартфоны
+              </a>
+            </li>
+            <li>
+              <a href="#laptops" class="group flex items-center gap-2.5 font-semibold text-brand-black tracking-[0.16px] leading-5.5">
+                <span class="icon-slot inline-flex shrink-0 items-center justify-center text-[#E94E59]" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M23 18C23.5523 18 24 18.4477 24 19C24 19.5523 23.5523 20 23 20H1C0.447715 20 0 19.5523 0 19C0 18.4477 0.447715 18 1 18H23ZM20 3C21.1046 3 22 3.89543 22 5V14C22 15.1046 21.1046 16 20 16H4C2.89543 16 2 15.1046 2 14V5C2 3.89543 2.89543 3 4 3H20Z" fill="#FE5364"/>
+                  </svg>
+                </span>
+                Ноутбуки
+              </a>
+            </li>
+            <li>
+              <a href="#tablets" class="group flex items-center gap-2.5 font-semibold text-brand-black tracking-[0.16px] leading-5.5">
+                <span class="icon-slot inline-flex shrink-0 items-center justify-center text-[#E94E59]" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M22 3C23.1046 3 24 3.89543 24 5V18C24 19.1046 23.1046 20 22 20H2C0.895431 20 4.02666e-09 19.1046 0 18V5C0 3.89543 0.895431 3 2 3H22Z" fill="#FE5364"/>
+                    <rect x="2" y="9" width="1" height="4" fill="#F3F3FB"/>
+                  </svg>
+                </span>
+                Планшеты
+              </a>
+            </li>
+            <li>
+              <a href="#monoblocks" class="group flex items-center gap-2.5 font-semibold text-brand-black tracking-[0.16px] leading-5.5">
+                <span class="icon-slot inline-flex shrink-0 items-center justify-center text-[#E94E59]" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 2C22.1046 2 23 2.89543 23 4V15C23 16.1046 22.1046 17 21 17H14V19H17C17.5523 19 18 19.4477 18 20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20C6 19.4477 6.44772 19 7 19H10V17H3C1.89543 17 1 16.1046 1 15V4C1 2.89543 1.89543 2 3 2H21Z" fill="#FE5364"/>
+                  </svg>
+                </span>
+                Моноблоки
+              </a>
+            </li>
+            <li>
+              <a href="#other" class="group flex items-center gap-2.5 font-semibold text-brand-black tracking-[0.16px] leading-5.5">
+                <span class="icon-slot inline-flex shrink-0 items-center justify-center text-[#E94E59]" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.10595 16.313C5.70961 16.313 4.81099 18.8655 2.41465 20C0.0183092 20 -1.77894 16.5966 3.01373 6.95359H3.31327L3.84047 6.01198C3.84047 6.01198 7.20732 4.11741 8.80089 5.51281H15.1991C16.7927 4.11741 20.1595 6.01198 20.1595 6.01198L20.6867 6.95359H20.9863C25.7789 16.5966 23.9817 20 21.5854 20C19.189 18.8655 18.2904 16.313 15.894 16.313H8.10595Z" fill="#FE5364"/>
+                    <path d="M8.49512 10.4951H10V11.4951H8.49512V13H7.49512V11.4951H6V10.4951H7.49512V9H8.49512V10.4951Z" fill="#F3F3FB"/>
+                    <path d="M16.0175 11.7206C16.4058 11.7209 16.7206 12.0362 16.7206 12.4247C16.7204 12.813 16.4057 13.1276 16.0175 13.1278C15.6289 13.1278 15.3135 12.8132 15.3134 12.4247C15.3134 12.0361 15.6288 11.7206 16.0175 11.7206ZM14.6093 10.3134C14.9979 10.3134 15.3134 10.6288 15.3134 11.0175C15.3132 11.4059 14.9977 11.7206 14.6093 11.7206C14.221 11.7204 13.9063 11.4058 13.9061 11.0175C13.9061 10.629 14.2208 10.3136 14.6093 10.3134ZM17.4247 10.3134C17.8131 10.3136 18.1278 10.629 18.1278 11.0175C18.1276 11.4058 17.813 11.7204 17.4247 11.7206C17.0362 11.7206 16.7208 11.4059 16.7206 11.0175C16.7206 10.6288 17.0361 10.3134 17.4247 10.3134ZM16.0175 8.90614C16.4058 8.9064 16.7206 9.22178 16.7206 9.61024C16.7203 9.99848 16.4057 10.3131 16.0175 10.3134C15.629 10.3134 15.3136 9.99865 15.3134 9.61024C15.3134 9.22162 15.6288 8.90614 16.0175 8.90614Z" fill="#F3F3FB"/>
+                  </svg>
+                </span>
+                Другое
+              </a>
+            </li>
+          </ul>
+          <ul class="flex flex-wrap items-center gap-x-4 sm:gap-x-6.25 ml-auto">
+            <li>
+              <a href="#about" class="font-semibold text-brand-black tracking-[0.16px] leading-5.5 transition hover:text-brand-red">О компании</a>
+            </li>
+            <li>
+              <a href="#promo" class="font-semibold text-brand-black tracking-[0.16px] leading-5.5 transition hover:text-brand-red">Акции</a>
+            </li>
+            <li>
+              <a href="#reviews" class="font-semibold text-brand-black tracking-[0.16px] leading-5.5 transition hover:text-brand-red">Отзывы</a>
+            </li>
+            <li>
+              <a href="#contacts" class="font-semibold text-brand-black tracking-[0.16px] leading-5.5 transition hover:text-brand-red">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- hero section start -->
+      <section class="bg-brand-hero-gradient py-20 relative">
+        <div class="page-container flex items-center justify-between">
+          <div class="relative z-10 w-149 space-y-7.5">
+            <h1 class="text-brand-black text-[72px] font-semibold tracking-[0.72px] leading-[105%]">
+              Срочный
+              ремонт техники
+              в <span class="text-brand-red">Новосибирске</span>
+            </h1>
+            <p class="text-brand-gray-3 text-xl leading-[150%] tracking-[0.6px]">
+              Гарантируем качественное проведение всех видов работ, согласование точных сроков и стоимости ремонта.
+            </p>
+
+            <button class="bg-brand-gradient flex items-center justify-between rounded-main cursor-pointer w-98.5 mt-17.5 py-2.5 pl-10 pr-2.5">
+              <span class="text-brand-black text-lg font-semibold leading-5.5 tracking-[0.18px]">Записаться на диагностику</span>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <rect width="50" height="50" rx="3" fill="white"/>
+                  <path d="M23 18L30 25L23 32" stroke="#0F172A" stroke-width="2"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <img class="absolute left-0 z-0" src="./src/assets/hero-shape.png" alt="">
+          <div class="relative xl:min-w-143.5 xl:min-h-147.5 z-10 xl:-right-10">
+            <img class="h-147.5" src="./src/assets/hero-img.png" width="574" height="590" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+
+      <!-- advantages section start -->
+      <section class="bg-white">
+        <div class="page-container">
+          <ul class="grid grid-cols-3 xl:grid-cols-4 gap-5">
+            <li>
+              <span class="icon-slot inline-flex shrink-0 items-center justify-center mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path d="M15.75 7.5V15.375L22.5 19.38L21.375 21.225L13.5 16.5V7.5H15.75Z" fill="#FE5364"/>
+                  <path d="M15 1.5C16.7727 1.5 18.5282 1.84898 20.166 2.52734C21.8039 3.20578 23.2923 4.20051 24.5459 5.4541C25.7995 6.70769 26.7942 8.19609 27.4727 9.83398C28.151 11.4718 28.5 13.2273 28.5 15C28.5 18.5804 27.0776 22.0142 24.5459 24.5459C22.0142 27.0776 18.5804 28.5 15 28.5C7.53635 28.5 1.5 22.4245 1.5 15C1.5 11.4196 2.92236 7.98584 5.4541 5.4541C7.98584 2.92236 11.4196 1.5 15 1.5Z" stroke="#FE5364" stroke-width="3"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-5.5 mb-2.5">Срочный ремонт</h3>
+              <p class="text-sm font-inter leading-5 text-brand-gray-3">
+                Срочная диагностика и ремонт устройства в вашем присутствии.
+              </p>
+            </li>
+            <li>
+              <span class="icon-slot inline-flex shrink-0 items-center justify-center mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36 36" fill="none">
+                  <path d="M28.5 8.53906V16.6504C28.4999 20.1291 27.4718 23.2776 25.3936 26.1377C23.4039 28.8759 20.9456 30.6179 18 31.4443C15.0554 30.617 12.5972 28.8742 10.6064 26.1357C8.52729 23.2756 7.49908 20.1279 7.5 16.6504V8.53906L18 4.60156L28.5 8.53906Z" stroke="#FE5364" stroke-width="3"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-5.5 mb-2.5">Гарантия качества</h3>
+              <p class="text-sm font-inter leading-5 text-brand-gray-3">
+                Гарантия на все виды <br>работ и детали. Полный пакет документов.
+              </p>
+            </li>
+            <li>
+              <span class="icon-slot inline-flex shrink-0 items-center justify-center mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <rect x="1.5" y="5.5" width="27" height="19" rx="1.5" stroke="#FE5364" stroke-width="3"/>
+                  <rect x="3" y="10" width="24" height="5" fill="#FE5364"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-5.5 mb-2.5">Способы оплаты</h3>
+              <p class="text-sm font-inter leading-5 text-brand-gray-3">
+                Оплата после ремонта. Картой или через банк. Рассрочка и кредит.
+              </p>
+            </li>
+            <li>
+              <span class="icon-slot inline-flex shrink-0 items-center justify-center mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path d="M11.8066 1.5L11.8457 1.50195H17.9951C18.0069 1.50198 18.0156 1.50631 18.0205 1.50977H18.0234L18.9521 4.24902L18.9541 4.25293C19.194 4.95225 19.6837 5.53498 20.3232 5.89551C20.962 6.2555 21.7097 6.37202 22.4268 6.22656L22.4258 6.22559L25.291 5.6582L25.2988 5.65625C25.31 5.65398 25.3217 5.65549 25.3301 5.65918C25.3379 5.66267 25.3396 5.6663 25.3389 5.66504L25.3398 5.66699L28.3877 10.8467L26.4365 13.0039L26.4307 13.0098C25.9421 13.5561 25.6689 14.2635 25.6689 15C25.6689 15.7365 25.9421 16.4439 26.4307 16.9902L26.4639 17.0254L28.4941 19.1523L25.4473 24.333L25.4453 24.335C25.4444 24.3359 25.4419 24.3385 25.4365 24.3408C25.4282 24.3445 25.4173 24.3459 25.4062 24.3438L25.3984 24.3418L22.5332 23.7734H22.5342C21.8169 23.6279 21.0686 23.7443 20.4297 24.1045C19.7902 24.465 19.3004 25.0478 19.0605 25.7471L19.0596 25.751L18.1299 28.4902C18.1313 28.4863 18.1321 28.4872 18.1279 28.4902C18.123 28.4937 18.1135 28.4981 18.1016 28.498H11.9521L11.9141 28.5C11.9016 28.5006 11.8914 28.4969 11.8857 28.4932C11.8807 28.4898 11.8814 28.4882 11.8828 28.4922L10.9531 25.751L10.9512 25.7471L10.8496 25.4902C10.5864 24.9055 10.1416 24.4199 9.58203 24.1045C9.02297 23.7894 8.38041 23.6611 7.74805 23.7314L7.47852 23.7734L4.61426 24.3418L4.60645 24.3438C4.5953 24.346 4.58356 24.3445 4.5752 24.3408C4.56764 24.3374 4.56576 24.3339 4.56641 24.335L4.56543 24.333L1.51172 19.1436L1.50488 19.1318L3.42676 16.9922L3.42871 16.9902C3.91729 16.4439 4.19043 15.7365 4.19043 15C4.19043 14.2635 3.91729 13.5561 3.42871 13.0098L3.42676 13.0078L1.50488 10.8672L1.51172 10.8564L4.55664 5.68164C4.55599 5.68272 4.55744 5.67912 4.56445 5.67578C4.56993 5.6732 4.57732 5.67297 4.58496 5.67285L7.46094 6.22852C8.17413 6.37004 8.91679 6.25342 9.55176 5.89551C10.1913 5.53498 10.681 4.95225 10.9209 4.25293L10.9277 4.2334L10.9346 4.21289L11.7764 1.50781C11.7749 1.51197 11.7741 1.51027 11.7793 1.50684C11.7849 1.50318 11.7946 1.49946 11.8066 1.5Z" stroke="#FE5364" stroke-width="3"/>
+                  <circle cx="15" cy="15" r="4.5" stroke="#FE5364" stroke-width="3"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-5.5 mb-2.5">Запчасти в наличии</h3>
+              <p class="text-sm font-inter leading-5 text-brand-gray-3">
+                Все комплектующие в наличии и готовы к ремонту.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- advantages section end -->
+
+      <!-- device-categories section start -->
+      <section class="bg-white pt-25">
+        <div class="page-container">
+          <!-- title -->
+          <h2 class="text-brand-black-2 text-4xl font-semibold tracking-[0.36px]">Выберите устройство для ремонта</h2>
+
+          <ul class="mt-12.5 grid gap-5 grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-1.png" alt="Смартфон" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Смартфон</p>
+            </li>
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-2.png" alt="Ноутбук" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Ноутбук</p>
+            </li>
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-3.png" alt="Планшет" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Планшет</p>
+            </li>
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-4.png" alt="Моноблок" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Моноблок</p>
+            </li>
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-5.png" alt="Компьютер" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Компьютер</p>
+            </li>
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-6.png" alt="Приставка" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Приставка</p>
+            </li>
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-7.png" alt="Умные часы" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Умные часы</p>
+            </li>
+            <li class="relative flex flex-col justify-between rounded-main bg-brand-gray-2 p-6 transition hover:shadow-sm">
+              <a href="#" class="absolute right-2.5 top-2.5 inline-flex size-10 items-center justify-center rounded-md bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                  <path d="M0.530334 0.530273L5.53033 5.53027L0.530334 10.5303" stroke="black" stroke-width="1.5"/>
+                </svg>
+              </a>
+              <img src="./src/assets/device-8.png" alt="Пылесос" class="mx-auto h-auto w-auto object-contain">
+              <p class="text-center text-lg font-semibold leading-6 text-brand-black">Пылесос</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- device-categories section end -->
+
+      <section class="py-28">
+        <div class="page-container">
+          <div class="relative flex items-center gap-4 z-0 w-full h-60 px-12 xl:px-17.5">
+            <img class="absolute left-0 top-0 size-full object-cover" src="./src/assets/shape.png" alt="">
+
+            <div class="relative z-10 w-132"> 
+              <h2 class="text-white text-[34px] font-bold leading-11">
+                Не нашли своё устройство?
+              </h2>
+              <p class="text-white text-lg font-medium leading-7 tracking-[0.54px] mt-5">
+                Мы ремонтируем любые устройства. Напишите нам в любой мессенджер и узнайте полную стоимость ремонта.
+              </p>
+            </div>
+            <div class="flex items-center relative z-10 gap-2.5">
+              <a href="#" class="bg-brand-gradient p-2.5 pr-13 rounded-main flex items-center gap-4">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                    <rect width="55" height="55" rx="3" fill="white"/>
+                    <path d="M28 14C35.1799 14 41 19.8201 41 27C41 34.1799 35.1799 40 28 40C25.7026 40.0039 23.4456 39.3959 21.461 38.2385L15.0052 40L16.7628 33.5416C15.6045 31.5564 14.996 29.2984 15 27C15 19.8201 20.8201 14 28 14ZM23.5696 20.89L23.3096 20.9004C23.1415 20.912 22.9773 20.9561 22.826 21.0304C22.6851 21.1104 22.5563 21.2102 22.4438 21.3268C22.2878 21.4737 22.1994 21.6011 22.1045 21.7246C21.6237 22.3498 21.3648 23.1173 21.3687 23.906C21.3713 24.543 21.5377 25.1631 21.7977 25.7429C22.3294 26.9155 23.2043 28.157 24.3587 29.3075C24.6369 29.5844 24.9099 29.8626 25.2037 30.1213C26.6382 31.3841 28.3475 32.2948 30.1957 32.7811L30.9341 32.8942C31.1746 32.9072 31.4151 32.889 31.6569 32.8773C32.0354 32.8573 32.405 32.7548 32.7398 32.577C32.9099 32.489 33.076 32.3936 33.2377 32.291C33.2377 32.291 33.2927 32.2537 33.4002 32.174C33.5757 32.044 33.6836 31.9517 33.8292 31.7996C33.9384 31.6869 34.0294 31.5561 34.1022 31.407C34.2036 31.1951 34.305 30.7908 34.3466 30.4541C34.3778 30.1967 34.3687 30.0563 34.3648 29.9692C34.3596 29.8301 34.2439 29.6858 34.1178 29.6247L33.3612 29.2854C33.3612 29.2854 32.2302 28.7927 31.5386 28.4781C31.4662 28.4466 31.3887 28.4285 31.3098 28.4248C31.2209 28.4155 31.1309 28.4254 31.0462 28.4539C30.9614 28.4824 30.8837 28.5288 30.8184 28.5899C30.8119 28.5873 30.7248 28.6614 29.7849 29.8002C29.731 29.8727 29.6567 29.9275 29.5715 29.9576C29.4863 29.9877 29.394 29.9917 29.3065 29.9692C29.2218 29.9466 29.1388 29.9179 29.0582 29.8834C28.897 29.8158 28.8411 29.7898 28.7306 29.743C27.9842 29.4179 27.2934 28.9779 26.6831 28.4391C26.5193 28.2961 26.3672 28.1401 26.2112 27.9893C25.6998 27.4995 25.2541 26.9454 24.8852 26.3409L24.8085 26.2174C24.7543 26.1339 24.7098 26.0445 24.6759 25.9509C24.6265 25.7598 24.7552 25.6064 24.7552 25.6064C24.7552 25.6064 25.0711 25.2606 25.218 25.0734C25.361 24.8914 25.4819 24.7146 25.5599 24.5885C25.7133 24.3415 25.7614 24.088 25.6808 23.8917C25.3168 23.0025 24.9407 22.1181 24.5524 21.2384C24.4757 21.0642 24.2482 20.9394 24.0415 20.9147C23.9713 20.906 23.9011 20.8991 23.8309 20.8939C23.6564 20.8839 23.4813 20.8856 23.307 20.8991L23.5696 20.89Z" fill="#1C1E24"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="text-brand-brown text-sm font-inter font-medium leading-5 tracking-[0.28px]">Написать в</span>
+                  <p class="text-brand-black font-bold leading-5 tracking-[0.32px]">WhatsApp</p>
+                </div>
+              </a>
+              <a href="#" class="bg-brand-gradient p-2.5 pr-13 rounded-main flex items-center gap-4">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                    <rect width="55" height="55" rx="3" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.4104 17.1437C35.7178 17.0165 36.0542 16.9726 36.3847 17.0166C36.7152 17.0606 37.0276 17.191 37.2895 17.394C37.5514 17.5971 37.7531 17.8654 37.8737 18.1711C37.9943 18.4769 38.0294 18.8088 37.9753 19.1324L35.1542 35.9581C34.8805 37.5811 33.0695 38.5118 31.5557 37.7034C30.2895 37.027 28.4088 35.985 26.7171 34.8977C25.8713 34.3534 23.2803 32.6106 23.5988 31.3704C23.8724 30.31 28.2259 26.3252 30.7136 23.9561C31.6901 23.0254 31.2448 22.4885 30.0917 23.3446C27.2283 25.4703 22.631 28.7029 21.111 29.6128C19.7702 30.4152 19.0711 30.5521 18.2353 30.4152C16.7103 30.1656 15.296 29.7792 14.1417 29.3083C12.5819 28.6723 12.6578 26.5637 14.1405 25.9497L35.4104 17.1437Z" fill="#1C1E24"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="text-brand-brown text-sm font-inter font-medium leading-5 tracking-[0.28px]">Написать в</span>
+                  <p class="text-brand-black font-bold leading-5 tracking-[0.32px]">Telegram</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Tech Repair — качественный ремонт по доступным ценам -->
+      <section class="bg-brand-softWhite py-25">
+        <!-- container -->
+        <div class="page-container">
+
+          <div class="flex items-center justify-between">
+            <!-- right -->
+            <div class="w-148">
+              <h2 class="text-brand-black text-[50px] font-semibold leading-[120%] tracking-[0.5px]">
+                Tech <span class="text-brand-red">Repair</span> — качественный ремонт по доступным ценам
+              </h2>
+              <p class="mt-5 text-xl text-brand-gray-3 leading-7.5 tracking-[0.6px]">
+                Мы предоставляем качественные услуги по ремонту и обслуживанию смартфонов, планшетов, ноутбуков и другой электроники.
+              </p>
+              <p class="mt-7.5 text-brand-gray-3 leading-[160%] tracking-[0.48px]">
+                Благодаря опыту и современному оборудованию, мы быстро и надежно решаем любые технические проблемы, обеспечивая долгий срок службы ваших  устройств
+              </p>
+
+              <button class="bg-brand-gradient flex items-center justify-between rounded-main cursor-pointer w-98.5 mt-12.5 py-2.5 pl-10 pr-2.5">
+                <span class="text-brand-black text-lg font-semibold leading-5.5 tracking-[0.18px]">Подробнее о компании</span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <rect width="50" height="50" rx="3" fill="white"/>
+                    <path d="M23 18L30 25L23 32" stroke="#0F172A" stroke-width="2"/>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <!-- left -->
+            <div class="relative translate-y-1/12">
+              <div>
+                <img src="./src/assets/phones1.png" alt="">
+              </div>
+              <div class="flex items-stretch gap-5 -translate-y-1/2">
+                <div class="flex flex-col justify-between items-start bg-[rgba(15,23,42,0.90)] shadow-[10px_10px_20px_0_rgba(11,18,38,0.03)] backdrop-blur-[9.75px] h-54.5 w-58.5 rounded-main px-10 py-7.5">
+                  <h4 class="text-white font-bold leading-5 tracking-[0.32px]">
+                    Проведено
+                    во время работы
+                  </h4>
+                  <div>
+                    <p class="text-brand-yellow text-[40px] font-bold leading-8">1000+</p>
+                    <span class="text-white/70 leading-6 tracking-[0.32px]">ремонтов</span>
+                  </div>
+                </div>
+                <div class="flex flex-col justify-between items-start bg-brand-red shadow-[10px_10px_20px_0_rgba(11,18,38,0.03)] h-54.5 w-58.5 rounded-main px-10 py-7.5">
+                  <h4 class="text-white font-bold leading-5 tracking-[0.32px]">
+                    Оставляют
+                    положительные
+                    отзывы
+                  </h4>
+                  <div>
+                    <p class="text-white text-[40px] font-bold leading-8">80%</p>
+                    <span class="text-white/70 leading-6 tracking-[0.32px]">клиентов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- items -->
+          <div class="grid grid-cols-2 xl:grid-cols-3 gap-5 mt-10">
+            <div class="bg-white rounded-[20px] p-8 xl:p-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                  <path d="M28.5 8.53906V16.6504C28.4999 20.1291 27.4718 23.2776 25.3936 26.1377C23.4039 28.8759 20.9456 30.6179 18 31.4443C15.0554 30.617 12.5972 28.8742 10.6064 26.1357C8.52729 23.2756 7.49908 20.1279 7.5 16.6504V8.53906L18 4.60156L28.5 8.53906Z" stroke="#FE5364" stroke-width="3"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-[120%] tracking-[0.18px] mt-5">
+                Высокое качество ремонта
+              </h3>
+              <p class="text-brand-gray-3 text-sm leading-[150%] tracking-[0.42px] mt-2.5">
+                Используем оригинальные запчасти и современные технологии.
+              </p>
+            </div>
+            <div class="bg-white rounded-[20px] p-8 xl:p-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path d="M15.75 7.5V15.375L22.5 19.38L21.375 21.225L13.5 16.5V7.5H15.75Z" fill="#FE5364"/>
+                  <path d="M15 1.5C16.7727 1.5 18.5282 1.84898 20.166 2.52734C21.8039 3.20578 23.2923 4.20051 24.5459 5.4541C25.7995 6.70769 26.7942 8.19609 27.4727 9.83398C28.151 11.4718 28.5 13.2273 28.5 15C28.5 18.5804 27.0776 22.0142 24.5459 24.5459C22.0142 27.0776 18.5804 28.5 15 28.5C7.53635 28.5 1.5 22.4245 1.5 15C1.5 11.4196 2.92236 7.98584 5.4541 5.4541C7.98584 2.92236 11.4196 1.5 15 1.5Z" stroke="#FE5364" stroke-width="3"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-[120%] tracking-[0.18px] mt-5">
+                Быстрые сроки
+              </h3>
+              <p class="text-brand-gray-3 text-sm leading-[150%] tracking-[0.42px] mt-2.5">
+                Ремонт в кратчайшие сроки, зачастую в тот же день.
+              </p>
+            </div>
+            <div class="bg-white rounded-[20px] p-8 xl:p-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                  <path d="M10.2328 13.0906C8.91094 11.8177 8.25 10.2875 8.25 8.5C8.25 6.7125 8.91094 5.18229 10.2328 3.90938C11.5547 2.63646 13.1437 2 15 2C16.8562 2 18.4453 2.63646 19.7672 3.90938C21.0891 5.18229 21.75 6.7125 21.75 8.5C21.75 10.2875 21.0891 11.8177 19.7672 13.0906C18.4453 14.3635 16.8562 15 15 15C13.1437 15 11.5547 14.3635 10.2328 13.0906ZM1.5 24.75V23.45C1.5 22.5292 1.74638 21.6831 2.23913 20.9117C2.73188 20.1404 3.3855 19.5511 4.2 19.1437C5.94375 18.3042 7.71562 17.6747 9.51562 17.2555C11.3156 16.8362 13.1437 16.6261 15 16.625C16.8562 16.6239 18.6844 16.8341 20.4844 17.2555C22.2844 17.6769 24.0562 18.3063 25.8 19.1437C26.6156 19.55 27.2698 20.1393 27.7626 20.9117C28.2553 21.6842 28.5011 22.5302 28.5 23.45V24.75C28.5 25.6437 28.1698 26.4091 27.5094 27.0461C26.8491 27.6831 26.0542 28.0011 25.125 28H4.875C3.94687 28 3.15262 27.682 2.49225 27.0461C1.83187 26.4102 1.50112 25.6448 1.5 24.75Z" stroke="#FE5364" stroke-width="3"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-[120%] tracking-[0.18px] mt-5">
+                Опытные специалисты
+              </h3>
+              <p class="text-brand-gray-3 text-sm leading-[150%] tracking-[0.42px] mt-2.5">
+                Команда профессионалов с многолетним опытом работы.
+              </p>
+            </div>
+            <div class="bg-white rounded-[20px] p-8 xl:p-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2469 2.72515C13.6858 2.28683 14.273 2.02891 14.8927 2.00229C15.5124 1.97566 16.1196 2.18226 16.5944 2.58133L16.7531 2.72639L19.1088 5.08087H22.439C23.0643 5.08099 23.6666 5.3174 24.125 5.74275C24.5835 6.16811 24.8643 6.75098 24.9112 7.37461L24.9186 7.56058V10.8908L27.2743 13.2466C27.713 13.6855 27.9711 14.273 27.9977 14.893C28.0243 15.513 27.8175 16.1205 27.4181 16.5954L27.2731 16.7529L24.9174 19.1086V22.4388C24.9176 23.0645 24.6813 23.667 24.2559 24.1257C23.8306 24.5845 23.2475 24.8654 22.6237 24.9124L22.439 24.9186H19.11L16.7544 27.2743C16.3154 27.713 15.7279 27.9711 15.1079 27.9977C14.488 28.0243 13.8805 27.8175 13.4056 27.4181L13.2481 27.2743L10.8924 24.9186H7.56103C6.93544 24.9188 6.3329 24.6825 5.87418 24.2571C5.41547 23.8317 5.13449 23.2487 5.08757 22.6248L5.08137 22.4388V19.1086L2.7257 16.7529C2.28704 16.3139 2.02891 15.7264 2.00229 15.1064C1.97566 14.4864 2.18247 13.879 2.58188 13.404L2.7257 13.2466L5.08137 10.8908V7.56058C5.08149 6.9352 5.3179 6.33295 5.74324 5.87449C6.16858 5.41603 6.75144 5.13522 7.37505 5.08831L7.56103 5.08087H10.8912L13.2469 2.72515Z" stroke="#FE5364" stroke-width="3"/>
+                  <path d="M18.9424 12.5C19.0969 12.5013 19.2411 12.5611 19.3438 12.6592C19.4455 12.7565 19.4988 12.8834 19.5 13.0107C19.5011 13.1375 19.4503 13.2638 19.3516 13.3623L14.1729 18.3115C14.1118 18.3699 14.0378 18.4174 13.9551 18.4502C13.8722 18.483 13.7823 18.5 13.6914 18.5C13.6007 18.5 13.5114 18.4829 13.4287 18.4502C13.346 18.4175 13.272 18.3698 13.2109 18.3115L10.6572 15.8721H10.6562C10.5531 15.7736 10.5001 15.6446 10.5 15.5156C10.5 15.3866 10.5532 15.2577 10.6562 15.1592C10.7601 15.0599 10.9061 15.0001 11.0625 15C11.2187 15 11.3639 15.0601 11.4678 15.1592L13.3457 16.9531L13.6914 17.2832L14.0371 16.9531L18.5391 12.6523C18.6437 12.5559 18.7881 12.4988 18.9424 12.5Z" fill="black" stroke="#FE5364"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-[120%] tracking-[0.18px] mt-5">
+                Гарантия на услуги
+              </h3>
+              <p class="text-brand-gray-3 text-sm leading-[150%] tracking-[0.42px] mt-2.5">
+                Предоставляем гарантию на все виды ремонта.
+              </p>
+            </div>
+            <div class="bg-white rounded-[20px] p-8 xl:p-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <rect x="1.5" y="5.5" width="27" height="19" rx="1.5" stroke="#FE5364" stroke-width="3"/>
+                  <rect x="3" y="10" width="24" height="5" fill="#FE5364"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-[120%] tracking-[0.18px] mt-5">
+                Доступные цены
+              </h3>
+              <p class="text-brand-gray-3 text-sm leading-[150%] tracking-[0.42px] mt-2.5">
+                Конкурентные тарифы без скрытых платежей.
+              </p>
+            </div>
+            <div class="bg-white rounded-[20px] p-8 xl:p-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path d="M11.8066 1.5L11.8457 1.50195H17.9951C18.0069 1.50198 18.0156 1.50631 18.0205 1.50977H18.0234L18.9521 4.24902L18.9541 4.25293C19.194 4.95225 19.6837 5.53498 20.3232 5.89551C20.962 6.2555 21.7097 6.37202 22.4268 6.22656L22.4258 6.22559L25.291 5.6582L25.2988 5.65625C25.31 5.65398 25.3217 5.65549 25.3301 5.65918C25.3379 5.66267 25.3396 5.6663 25.3389 5.66504L25.3398 5.66699L28.3877 10.8467L26.4365 13.0039L26.4307 13.0098C25.9421 13.5561 25.6689 14.2635 25.6689 15C25.6689 15.7365 25.9421 16.4439 26.4307 16.9902L26.4639 17.0254L28.4941 19.1523L25.4473 24.333L25.4453 24.335C25.4444 24.3359 25.4419 24.3385 25.4365 24.3408C25.4282 24.3445 25.4173 24.3459 25.4062 24.3438L25.3984 24.3418L22.5332 23.7734H22.5342C21.8169 23.6279 21.0686 23.7443 20.4297 24.1045C19.7902 24.465 19.3004 25.0478 19.0605 25.7471L19.0596 25.751L18.1299 28.4902C18.1313 28.4863 18.1321 28.4872 18.1279 28.4902C18.123 28.4937 18.1135 28.4981 18.1016 28.498H11.9521L11.9141 28.5C11.9016 28.5006 11.8914 28.4969 11.8857 28.4932C11.8807 28.4898 11.8814 28.4882 11.8828 28.4922L10.9531 25.751L10.9512 25.7471L10.8496 25.4902C10.5864 24.9055 10.1416 24.4199 9.58203 24.1045C9.02297 23.7894 8.38041 23.6611 7.74805 23.7314L7.47852 23.7734L4.61426 24.3418L4.60645 24.3438C4.5953 24.346 4.58356 24.3445 4.5752 24.3408C4.56764 24.3374 4.56576 24.3339 4.56641 24.335L4.56543 24.333L1.51172 19.1436L1.50488 19.1318L3.42676 16.9922L3.42871 16.9902C3.91729 16.4439 4.19043 15.7365 4.19043 15C4.19043 14.2635 3.91729 13.5561 3.42871 13.0098L3.42676 13.0078L1.50488 10.8672L1.51172 10.8564L4.55664 5.68164C4.55599 5.68272 4.55744 5.67912 4.56445 5.67578C4.56993 5.6732 4.57732 5.67297 4.58496 5.67285L7.46094 6.22852C8.17413 6.37004 8.91679 6.25342 9.55176 5.89551C10.1913 5.53498 10.681 4.95225 10.9209 4.25293L10.9277 4.2334L10.9346 4.21289L11.7764 1.50781C11.7749 1.51197 11.7741 1.51027 11.7793 1.50684C11.7849 1.50318 11.7946 1.49946 11.8066 1.5Z" stroke="#FE5364" stroke-width="3"/>
+                  <circle cx="15" cy="15" r="4.5" stroke="#FE5364" stroke-width="3"/>
+                </svg>
+              </span>
+              <h3 class="text-brand-black text-lg font-semibold leading-[120%] tracking-[0.18px] mt-5">
+                Современное оборудование
+              </h3>
+              <p class="text-brand-gray-3 text-sm leading-[150%] tracking-[0.42px] mt-2.5">
+                Используем только проверенные инструменты и технологии.
+              </p>
+            </div>
+          </div>
+
+          <!-- Команда, которая исправит любую поломку -->
+          <div class="mt-28 pt-2">
+            <h2 class="text-brand-black-2 text-4xl font-semibold leading-7 tracking-[0.36px]">
+              Команда, которая исправит любую поломку
+            </h2>
+            <!-- team -->
+            <div class="grid grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+              <div>
+                <!-- img -->
+                <div class="relative overflow-hidden rounded-main h-[275px]">
+                  <img class="absolute object-cover size-full" src="./src/assets/team-1.jpg" alt="">
+                </div>
+
+                <div class="text-center mt-7.5 space-y-1">
+                  <h3 class="text-brand-black text-xl font-bold leading-6 tracking-[0.2px]">Евгений Иванов</h3>
+                  <p class="text-brand-gray-3 leading-6 tracking-[0.48px]">Мастер</p>
+                </div>
+              </div>
+              <div>
+                <!-- img -->
+                <div class="relative overflow-hidden rounded-main h-[275px]">
+                  <img class="absolute object-cover size-full" src="./src/assets/team-2.jpg" alt="">
+                </div>
+
+                <div class="text-center mt-7.5 space-y-1">
+                  <h3 class="text-brand-black text-xl font-bold leading-6 tracking-[0.2px]">Михаил Воронин</h3>
+                  <p class="text-brand-gray-3 leading-6 tracking-[0.48px]">Менеджер</p>
+                </div>
+              </div>
+              <div>
+                <!-- img -->
+                <div class="relative overflow-hidden rounded-main h-[275px]">
+                  <img class="absolute object-cover size-full" src="./src/assets/team-3.jpg" alt="">
+                </div>
+
+                <div class="text-center mt-7.5 space-y-1">
+                  <h3 class="text-brand-black text-xl font-bold leading-6 tracking-[0.2px]">Вероника Рыбакова</h3>
+                  <p class="text-brand-gray-3 leading-6 tracking-[0.48px]">Мастер</p>
+                </div>
+              </div>
+              <div>
+                <!-- img -->
+                <div class="relative overflow-hidden rounded-main h-[275px]">
+                  <img class="absolute object-cover size-full" src="./src/assets/team-4.jpg" alt="">
+                </div>
+
+                <div class="text-center mt-7.5 space-y-1">
+                  <h3 class="text-brand-black text-xl font-bold leading-6 tracking-[0.2px]">Марина Петрова</h3>
+                  <p class="text-brand-gray-3 leading-6 tracking-[0.48px]">Менеджер</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Акции и скидки -->
+      <section class="bg-white py-24 xl:py-30">
+        <div class="page-container">
+          <h2 class="text-brand-black-2 text-4xl font-semibold leading-7 tracking-[0.36px]">
+            Акции и скидки
+          </h2>
+
+          <div class="grid grid-cols-2 gap-5 mt-10">
+            <!-- 1 -->
+            <div class="bg-brand-red rounded-main relative overflow-hidden p-10 xl:p-12.5">
+              <img class="absolute z-10 right-0 bottom-0" src="./src/assets/girl.png" alt="">
+              <img class="absolute object-cover size-full z-0 left-0 top-0" src="./src/assets/skidka-shape.png" alt="">
+
+              <div class="relative z-20 lg:w-79">
+                <span class="inline-flex items-center bg-brand-red-2 text-white text-[15px] font-bold leading-6 rounded-full h-8 px-5">Скидка</span>
+
+                <h3 class="text-white text-3xl font-bold leading-10 mt-2.5">
+                  Скидка 20%
+                  для студентов
+                </h3>
+
+                <p class="text-white text-lg font-medium leading-7 tracking-[0.54px] mt-5">
+                  При предъявлении студенческого билета скидка 20% на ремонт любого устройства.
+                </p>
+
+                <button class="bg-brand-gradient rounded-main text-center text-brand-black cursor-pointer font-bold leading-5.5 tracking-[0.16px] py-3.5 px-9 mt-7.5 border-none">
+                  Получить скидку
+                </button>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="rounded-main relative overflow-hidden p-10 xl:p-12.5">
+              <img class="absolute z-10 right-0 bottom-0" src="./src/assets/phones-2.png" alt="">
+              <img class="absolute object-cover size-full z-0 left-0 top-0" src="./src/assets/skidka-shape-2.png" alt="">
+
+              <div class="relative z-20 lg:w-79">
+                <span class="inline-flex items-center bg-[#272E3F] text-white text-[15px] font-bold leading-6 rounded-full h-8 px-5">Акция</span>
+
+                <h3 class="text-white text-3xl font-bold leading-10 mt-2.5">
+                  Скидка 30% <br>
+                  на защиту дисплея
+                </h3>
+
+                <p class="text-white text-lg font-medium leading-7 tracking-[0.54px] mt-5">
+                  При ремонте смартфона скидка 50% на оклейку дисплея защитным стеклом.
+                </p>
+
+                <button class="bg-brand-red rounded-main text-center text-white cursor-pointer font-bold leading-5.5 tracking-[0.16px] py-3.5 px-9 mt-7.5 border-none">
+                  Получить скидку
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Этапы работы -->
+      <section class="bg-white py-24 xl:py-30">
+        <div class="page-container">
+          <h2 class="text-brand-black-2 text-4xl font-semibold leading-7 tracking-[0.36px]">
+            Этапы работы
+          </h2>
+
+          <div class="relative grid grid-cols-4 gap-7.5 mt-17.5">
+            <!-- line -->
+            <div class="absolute z-0 left-1/2 -translate-x-1/2 top-6 w-[80%] border-t-2 border-dashed border-[#D9D9E9]"></div>
+            <!-- 1 -->
+            <div class="flex flex-col items-center text-center gap-5 z-10">
+              <span class="bg-brand-red rounded-main size-12.5 flex items-center justify-center text-white text-[26px] font-bold">
+                1
+              </span>
+              <h3 class="text-brand-black text-xl font-semibold leading-6.5">
+                Диагностика
+              </h3>
+              <p class="text-brand-gray-3 font-medium leading-6 tracking-[0.32px]">
+                Наши специалисты принимают устройство, проводят бесплатную диагностику и определяют объем необходимых работ.
+              </p>
+            </div>
+            <!-- 2 -->
+            <div class="flex flex-col items-center text-center gap-5 z-10">
+              <span class="bg-brand-red rounded-main size-12.5 flex items-center justify-center text-white text-[26px] font-bold">
+                2
+              </span>
+              <h3 class="text-brand-black text-xl font-semibold leading-6.5">
+                Согласование
+              </h3>
+              <p class="text-brand-gray-3 font-medium leading-6 tracking-[0.32px]">
+                После диагностики мы сообщаем клиенту стоимость ремонта и сроки выполнения, согласовываем все детали.
+              </p>
+            </div>
+            <!-- 3 -->
+            <div class="flex flex-col items-center text-center gap-5 z-10">
+              <span class="bg-brand-red rounded-main size-12.5 flex items-center justify-center text-white text-[26px] font-bold">
+                3
+              </span>
+              <h3 class="text-brand-black text-xl font-semibold leading-6.5">
+                Ремонт
+              </h3>
+              <p class="text-brand-gray-3 font-medium leading-6 tracking-[0.32px]">
+                Мастера выполняют ремонт, замену деталей и проводят тестирование для обеспечения качества.
+              </p>
+            </div>
+            <!-- 4 -->
+            <div class="flex flex-col items-center text-center gap-5 z-10">
+              <span class="bg-brand-red rounded-main size-12.5 flex items-center justify-center text-white text-[26px] font-bold">
+                4
+              </span>
+              <h3 class="text-brand-black text-xl font-semibold leading-6.5">
+                Выдача и гарантия
+              </h3>
+              <p class="text-brand-gray-3 font-medium leading-6 tracking-[0.32px]">
+                Готовое устройство передается клиенту, предоставляется гарантия на выполненные работы и замененные детали.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Часто задаваемые вопросы -->
+      <section class="bg-white pb-30">
+        <div class="page-container">
+          <h2 class="text-brand-black-2 text-4xl font-semibold leading-normal tracking-[0.36px]">
+            Часто задаваемые <br> вопросы
+          </h2>
+          
+          <div class="flex items-center gap-10 mt-10">
+            <p class="text-brand-gray-3 text-lg w-[406px] leading-7.5 tracking-[0.6px]">
+              Вы можете задать любой интересующий
+              вас вопрос в мессенджерах.
+            </p>
+            <div class="flex items-center relative z-10 gap-2.5">
+              <a href="#" class="bg-brand-gradient p-2.5 pr-13 rounded-main flex items-center gap-4">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                    <rect width="55" height="55" rx="3" fill="white"/>
+                    <path d="M28 14C35.1799 14 41 19.8201 41 27C41 34.1799 35.1799 40 28 40C25.7026 40.0039 23.4456 39.3959 21.461 38.2385L15.0052 40L16.7628 33.5416C15.6045 31.5564 14.996 29.2984 15 27C15 19.8201 20.8201 14 28 14ZM23.5696 20.89L23.3096 20.9004C23.1415 20.912 22.9773 20.9561 22.826 21.0304C22.6851 21.1104 22.5563 21.2102 22.4438 21.3268C22.2878 21.4737 22.1994 21.6011 22.1045 21.7246C21.6237 22.3498 21.3648 23.1173 21.3687 23.906C21.3713 24.543 21.5377 25.1631 21.7977 25.7429C22.3294 26.9155 23.2043 28.157 24.3587 29.3075C24.6369 29.5844 24.9099 29.8626 25.2037 30.1213C26.6382 31.3841 28.3475 32.2948 30.1957 32.7811L30.9341 32.8942C31.1746 32.9072 31.4151 32.889 31.6569 32.8773C32.0354 32.8573 32.405 32.7548 32.7398 32.577C32.9099 32.489 33.076 32.3936 33.2377 32.291C33.2377 32.291 33.2927 32.2537 33.4002 32.174C33.5757 32.044 33.6836 31.9517 33.8292 31.7996C33.9384 31.6869 34.0294 31.5561 34.1022 31.407C34.2036 31.1951 34.305 30.7908 34.3466 30.4541C34.3778 30.1967 34.3687 30.0563 34.3648 29.9692C34.3596 29.8301 34.2439 29.6858 34.1178 29.6247L33.3612 29.2854C33.3612 29.2854 32.2302 28.7927 31.5386 28.4781C31.4662 28.4466 31.3887 28.4285 31.3098 28.4248C31.2209 28.4155 31.1309 28.4254 31.0462 28.4539C30.9614 28.4824 30.8837 28.5288 30.8184 28.5899C30.8119 28.5873 30.7248 28.6614 29.7849 29.8002C29.731 29.8727 29.6567 29.9275 29.5715 29.9576C29.4863 29.9877 29.394 29.9917 29.3065 29.9692C29.2218 29.9466 29.1388 29.9179 29.0582 29.8834C28.897 29.8158 28.8411 29.7898 28.7306 29.743C27.9842 29.4179 27.2934 28.9779 26.6831 28.4391C26.5193 28.2961 26.3672 28.1401 26.2112 27.9893C25.6998 27.4995 25.2541 26.9454 24.8852 26.3409L24.8085 26.2174C24.7543 26.1339 24.7098 26.0445 24.6759 25.9509C24.6265 25.7598 24.7552 25.6064 24.7552 25.6064C24.7552 25.6064 25.0711 25.2606 25.218 25.0734C25.361 24.8914 25.4819 24.7146 25.5599 24.5885C25.7133 24.3415 25.7614 24.088 25.6808 23.8917C25.3168 23.0025 24.9407 22.1181 24.5524 21.2384C24.4757 21.0642 24.2482 20.9394 24.0415 20.9147C23.9713 20.906 23.9011 20.8991 23.8309 20.8939C23.6564 20.8839 23.4813 20.8856 23.307 20.8991L23.5696 20.89Z" fill="#1C1E24"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="text-brand-brown text-sm font-inter font-medium leading-5 tracking-[0.28px]">Написать в</span>
+                  <p class="text-brand-black font-bold leading-5 tracking-[0.32px]">WhatsApp</p>
+                </div>
+              </a>
+              <a href="#" class="bg-brand-gradient p-2.5 pr-13 rounded-main flex items-center gap-4">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                    <rect width="55" height="55" rx="3" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.4104 17.1437C35.7178 17.0165 36.0542 16.9726 36.3847 17.0166C36.7152 17.0606 37.0276 17.191 37.2895 17.394C37.5514 17.5971 37.7531 17.8654 37.8737 18.1711C37.9943 18.4769 38.0294 18.8088 37.9753 19.1324L35.1542 35.9581C34.8805 37.5811 33.0695 38.5118 31.5557 37.7034C30.2895 37.027 28.4088 35.985 26.7171 34.8977C25.8713 34.3534 23.2803 32.6106 23.5988 31.3704C23.8724 30.31 28.2259 26.3252 30.7136 23.9561C31.6901 23.0254 31.2448 22.4885 30.0917 23.3446C27.2283 25.4703 22.631 28.7029 21.111 29.6128C19.7702 30.4152 19.0711 30.5521 18.2353 30.4152C16.7103 30.1656 15.296 29.7792 14.1417 29.3083C12.5819 28.6723 12.6578 26.5637 14.1405 25.9497L35.4104 17.1437Z" fill="#1C1E24"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="text-brand-brown text-sm font-inter font-medium leading-5 tracking-[0.28px]">Написать в</span>
+                  <p class="text-brand-black font-bold leading-5 tracking-[0.32px]">Telegram</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- accordions -->
+          <div class="mt-10 space-y-3">
+            <!-- Сколько стоит ремонт? -->
+            <div class="rounded-main bg-brand-gray-4 overflow-hidden">
+              <input class="peer hidden" type="checkbox" id="faq-1" checked>
+              <label for="faq-1" class="cursor-pointer flex items-center justify-between gap-6 peer-checked:[&_.faq-arrow]:rotate-180 px-7.5 py-5">
+                <span class="text-[#070B14] text-xl font-bold leading-8 tracking-[0.2px]">
+                  Сколько стоит ремонт?
+                </span>
+                <span class="size-10 rounded-main bg-white flex items-center justify-center shrink-0">
+                  <svg class="faq-arrow transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M14.7072 8.41406L7.70715 1.41406L0.707154 8.41406" stroke="#070B14" stroke-width="2"/>
+                  </svg>
+                </span>
+              </label>
+              <div class="max-h-0 opacity-0 peer-checked:max-h-40 peer-checked:opacity-100 peer-checked:pb-6 transition-all duration-300 ease-in-out border-t border-brand-gray-3/10 px-7.5 pb-0 pt-0 peer-checked:pt-5">
+                <p class="text-[#070B14] text-lg leading-8 tracking-[0.2px]">
+                  Стоимость зависит от типа устройства и объема работ. Окончательную цену мы сообщим после диагностики.
+                </p>
+              </div>
+            </div>
+
+            <!-- Сколько времени занимает ремонт? -->
+            <div class="rounded-main bg-brand-gray-4 overflow-hidden">
+              <input class="peer hidden" type="checkbox" id="faq-2">
+              <label for="faq-2" class="cursor-pointer flex items-center justify-between gap-6 peer-checked:[&_.faq-arrow]:rotate-180 px-7.5 py-5">
+                <span class="text-[#070B14] text-xl font-bold leading-8 tracking-[0.2px]">
+                  Сколько времени занимает ремонт?
+                </span>
+                <span class="size-10 rounded-main bg-white flex items-center justify-center shrink-0">
+                  <svg class="faq-arrow transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M14.7072 8.41406L7.70715 1.41406L0.707154 8.41406" stroke="#070B14" stroke-width="2"/>
+                  </svg>
+                </span>
+              </label>
+              <div class="max-h-0 opacity-0 peer-checked:max-h-40 peer-checked:opacity-100 peer-checked:pb-6 transition-all duration-300 ease-in-out border-t border-brand-gray-3/10 px-7.5 pb-0 pt-0 peer-checked:pt-5">
+                <p class="text-[#070B14] text-lg leading-8 tracking-[0.2px]">
+                  Простые работы выполняем в течение дня, более сложный ремонт может занять 1-3 дня.
+                </p>
+              </div>
+            </div>
+
+            <!-- Предоставляете ли вы гарантию? -->
+            <div class="rounded-main bg-brand-gray-4 overflow-hidden">
+              <input class="peer hidden" type="checkbox" id="faq-3">
+              <label for="faq-3" class="cursor-pointer flex items-center justify-between gap-6 peer-checked:[&_.faq-arrow]:rotate-180 px-7.5 py-5">
+                <span class="text-[#070B14] text-xl font-bold leading-8 tracking-[0.2px]">
+                  Предоставляете ли вы гарантию?
+                </span>
+                <span class="size-10 rounded-main bg-white flex items-center justify-center shrink-0">
+                  <svg class="faq-arrow transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M14.7072 8.41406L7.70715 1.41406L0.707154 8.41406" stroke="#070B14" stroke-width="2"/>
+                  </svg>
+                </span>
+              </label>
+              <div class="max-h-0 opacity-0 peer-checked:max-h-40 peer-checked:opacity-100 peer-checked:pb-6 transition-all duration-300 ease-in-out border-t border-brand-gray-3/10 px-7.5 pb-0 pt-0 peer-checked:pt-5">
+                <p class="text-[#070B14] text-lg leading-8 tracking-[0.2px]">
+                  Да, мы даем гарантию на выполненные работы и замененные запчасти.
+                </p>
+              </div>
+            </div>
+
+            <!-- Hy>KHo nu предварительно записываться? -->
+            <div class="rounded-main bg-brand-gray-4 overflow-hidden">
+              <input class="peer hidden" type="checkbox" id="faq-4">
+              <label for="faq-4" class="cursor-pointer flex items-center justify-between gap-6 peer-checked:[&_.faq-arrow]:rotate-180 px-7.5 py-5">
+                <span class="text-[#070B14] text-xl font-bold leading-8 tracking-[0.2px]">
+                  Нужно ли предварительно записываться?
+                </span>
+                <span class="size-10 rounded-main bg-white flex items-center justify-center shrink-0">
+                  <svg class="faq-arrow transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M14.7072 8.41406L7.70715 1.41406L0.707154 8.41406" stroke="#070B14" stroke-width="2"/>
+                  </svg>
+                </span>
+              </label>
+              <div class="max-h-0 opacity-0 peer-checked:max-h-40 peer-checked:opacity-100 peer-checked:pb-6 transition-all duration-300 ease-in-out border-t border-brand-gray-3/10 px-7.5 pb-0 pt-0 peer-checked:pt-5">
+                <p class="text-[#070B14] text-lg leading-8 tracking-[0.2px]">
+                  Желательно записаться заранее, но вы также можете приехать без записи в рабочее время.
+                </p>
+              </div>
+            </div>
+
+            <!-- Можно ли получить консультацию по телефону или онлайн? -->
+            <div class="rounded-main bg-brand-gray-4 overflow-hidden">
+              <input class="peer hidden" type="checkbox" id="faq-5">
+              <label for="faq-5" class="cursor-pointer flex items-center justify-between gap-6 peer-checked:[&_.faq-arrow]:rotate-180 px-7.5 py-5">
+                <span class="text-[#070B14] text-xl font-bold leading-8 tracking-[0.2px]">
+                  Можно ли получить консультацию по телефону или онлайн?
+                </span>
+                <span class="size-10 rounded-main bg-white flex items-center justify-center shrink-0">
+                  <svg class="faq-arrow transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <path d="M14.7072 8.41406L7.70715 1.41406L0.707154 8.41406" stroke="#070B14" stroke-width="2"/>
+                  </svg>
+                </span>
+              </label>
+              <div class="max-h-0 opacity-0 peer-checked:max-h-40 peer-checked:opacity-100 peer-checked:pb-6 transition-all duration-300 ease-in-out border-t border-brand-gray-3/10 px-7.5 pb-0 pt-0 peer-checked:pt-5">
+                <p class="text-[#070B14] text-lg leading-8 tracking-[0.2px]">
+                  Конечно, мы консультируем по телефону, в мессенджерах и онлайн.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Не можете определить, что сломалось? -->
+      <section class="page-container">
+        <div class="bg-brand-red flex items-center relative overflow-hidden rounded-main w-full p-16 xl:p-17.5">
+          <div class="bg-black/5 z-1 size-full absolute left-0 top-0 "></div>
+          <img class="absolute size-full z-0 right-0 bottom-0" src="./src/assets/shap-4.png" alt="">
+
+          <div class="flex items-center justify-between w-full gap-4">
+            <div class="max-w-118 z-10">
+              <h2 class="text-white text-[34px] font-bold leading-[130%]">
+                Не можете определить,
+                что сломалось?
+              </h2>
+              <p class="text-white text-lg leading-7 tracking-[0.36px] mt-7.5">
+                Оставьте заявку, наш специалист свяжется с вами в ближайшее время, поможет определить поломку и рассчитает стоимость ремонта.
+              </p>
+
+              <div class="flex items-center gap-2.5 mt-7.5">
+                <a href="#" aria-label="Telegram" class="size-15 rounded-main bg-brand-yellow flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.6498 0.15419C23.9742 0.017663 24.3292 -0.0294243 24.678 0.0178287C25.0267 0.0650817 25.3564 0.204948 25.6328 0.422869C25.9092 0.640791 26.122 0.9288 26.2493 1.25692C26.3766 1.58504 26.4136 1.94128 26.3565 2.28855L23.3794 20.3466C23.0906 22.0885 21.1794 23.0874 19.5819 22.2198C18.2456 21.4939 16.2609 20.3755 14.4757 19.2086C13.5831 18.6244 10.8489 16.7539 11.1849 15.4229C11.4737 14.2848 16.068 10.0082 18.6932 7.46563C19.7237 6.4667 19.2537 5.89045 18.0369 6.80931C15.0152 9.09068 10.1637 12.56 8.55962 13.5366C7.14459 14.3977 6.40688 14.5447 5.52478 14.3977C3.91548 14.1299 2.423 13.7151 1.20486 13.2098C-0.441196 12.5272 -0.361125 10.2642 1.20355 9.60524L23.6498 0.15419Z" fill="#0F172A"/>
+                  </svg>
+                </a>
+                <a href="#" aria-label="WhatsApp" class="size-15 rounded-main bg-brand-yellow flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                    <path d="M14.5 0C22.5084 0 29 6.2678 29 14C29 21.7322 22.5084 28 14.5 28C11.9375 28.0042 9.42006 27.3495 7.20652 26.103L0.00582241 28L1.96622 21.0448C0.674212 18.9069 -0.00446836 16.4752 2.21396e-05 14C2.21396e-05 6.2678 6.49167 0 14.5 0ZM9.55842 7.41999L9.26841 7.43119C9.08092 7.44367 8.89772 7.49122 8.72902 7.57119C8.5718 7.65731 8.42823 7.76481 8.30272 7.89039C8.12872 8.04859 8.03012 8.18579 7.92427 8.31879C7.38794 8.99206 7.09918 9.81863 7.10357 10.668C7.10647 11.354 7.29207 12.0218 7.58207 12.6462C8.17512 13.909 9.15096 15.246 10.4386 16.485C10.7489 16.7832 11.0534 17.0828 11.3811 17.3614C12.981 18.7213 14.8876 19.7021 16.9491 20.2258L17.7727 20.3476C18.0409 20.3616 18.3092 20.342 18.5789 20.3294C19.0011 20.3079 19.4133 20.1975 19.7867 20.006C19.9764 19.9113 20.1617 19.8085 20.3421 19.698C20.3421 19.698 20.4034 19.6579 20.5233 19.572C20.7191 19.432 20.8394 19.3326 21.0018 19.1688C21.1236 19.0475 21.2251 18.9065 21.3063 18.746C21.4194 18.5178 21.5325 18.0824 21.5789 17.7198C21.6137 17.4426 21.6036 17.2914 21.5992 17.1976C21.5934 17.0478 21.4644 16.8924 21.3237 16.8266L20.4798 16.4612C20.4798 16.4612 19.2183 15.9306 18.4469 15.5918C18.3662 15.5578 18.2797 15.5384 18.1917 15.5344C18.0925 15.5244 17.9922 15.5351 17.8976 15.5657C17.8031 15.5964 17.7164 15.6464 17.6436 15.7122C17.6364 15.7094 17.5392 15.7892 16.4909 17.0156C16.4307 17.0937 16.3478 17.1527 16.2528 17.1851C16.1577 17.2175 16.0549 17.2218 15.9573 17.1976C15.8628 17.1733 15.7702 17.1424 15.6803 17.1052C15.5005 17.0324 15.4382 17.0044 15.3149 16.954C14.4824 16.6039 13.7119 16.1301 13.0312 15.5498C12.8485 15.3958 12.6788 15.2278 12.5048 15.0654C11.9344 14.5379 11.4373 13.9412 11.0258 13.2902L10.9403 13.1572C10.8797 13.0673 10.8301 12.971 10.7924 12.8702C10.7373 12.6644 10.8808 12.4992 10.8808 12.4992C10.8808 12.4992 11.2332 12.1268 11.397 11.9252C11.5565 11.7292 11.6914 11.5388 11.7784 11.403C11.9495 11.137 12.0031 10.864 11.9132 10.6526C11.5072 9.69499 11.0877 8.74253 10.6546 7.79519C10.5691 7.60759 10.3153 7.47319 10.0848 7.44659C10.0065 7.43726 9.92816 7.42979 9.84986 7.42419C9.65517 7.41341 9.45995 7.41528 9.26551 7.42979L9.55842 7.41999Z" fill="#0F172A"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white rounded-main p-10 pt-7.5 max-w-115.5 w-full z-10">
+              <h3 class="text-brand-black text-2xl font-bold leading-7 tracking-[0.24px]">
+                Оставьте <br>
+                ваши контакты
+              </h3>
+              <form class="mt-7.5">
+                <input
+                  type="text"
+                  placeholder="Имя"
+                  class="w-full bg-[#F3F3FB] text-brand-black placeholder:text-[#9F9FB4] leading-6 rounded-main px-7.5 h-13.5 mb-2.5"
+                >
+
+                <label class="w-full h-13.5 rounded-main bg-[#F3F3FB] px-7.5 flex items-center gap-3">
+                  <img src="./src/assets/ru.png" alt="">
+                  <input
+                    type="tel"
+                    placeholder="+7 (900) 123 45 67"
+                    class="w-full flex-1 bg-transparent text-brand-black placeholder:text-[#9F9FB4] leading-6 tracking-[0.32px] outline-none"
+                  >
+                </label>
+
+                <label class="flex items-center gap-3.5 mt-7.5 cursor-pointer">
+                  <input type="checkbox" checked class="mt-1 size-5 accent-brand-red">
+                  <span class="text-brand-gray-3 text-sm leading-6 tracking-[0.2px]">
+                    Нажимая кнопку, я выражаю согласие с
+                    <a href="#" class="block text-brand-red hover:underline">Политикой обработки персональных данных.</a>
+                  </span>
+                </label>
+
+                <button type="submit" class="bg-brand-gradient flex items-center justify-between rounded-main cursor-pointer w-98.5 mt-7.5 py-2.5 pl-10 pr-2.5">
+                  <span class="text-brand-black text-lg font-semibold leading-5.5 tracking-[0.18px]">Оставить заявку</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <rect width="50" height="50" rx="3" fill="white"/>
+                      <path d="M23 18L30 25L23 32" stroke="#0F172A" stroke-width="2"/>
+                    </svg>
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Отзывы и рейтинги -->
+      <section class="bg-white py-30">
+        <div class="page-container">
+          <div class="flex items-center justify-between">
+            <h2 class="text-brand-black-2 text-4xl font-semibold leading-normal tracking-[0.36px]">
+              Отзывы и рейтинги
+            </h2>
+            <div class="flex items-center gap-2.5">
+              <button class="rounded-lg bg-brand-red flex items-center justify-center size-10 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                  <path d="M8.41418 14.707L1.41419 7.70703L8.41419 0.707032" stroke="white" stroke-width="2"/>
+                </svg>
+              </button>
+              <button class="rounded-lg bg-brand-red flex items-center justify-center size-10 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                  <path d="M0.707153 0.707031L7.70715 7.70703L0.707153 14.707" stroke="white" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- div -->
+          <div class="flex items-start mt-10 gap-7.5">
+            <!-- rates -->
+            <div class="flex flex-col gap-2.5">
+              <div class="w-[223px] bg-brand-gray-4 py-5 flex items-center justify-center gap-2.5 rounded-main outline-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M20 0C31.0446 0 40 8.95539 40 20C40 31.0446 31.0446 40 20 40C8.95539 40 0 31.0446 0 20C0 8.95539 8.95539 0 20 0Z" fill="#FC3F1D"/>
+                  <path d="M22.7764 31.499H26.9548V7.50343H20.8756C14.7631 7.49788 11.5489 10.64 11.5489 15.2673C11.5489 18.9637 13.3112 21.136 16.4533 23.3804L11.0003 31.4934H15.5223L21.596 22.4106L19.4902 20.9975C16.9354 19.274 15.6941 17.9274 15.6941 15.0235C15.6941 12.4688 17.4896 10.7398 20.9088 10.7398H22.7708L22.7764 31.499Z" fill="white"/>
+                </svg>
+
+                <p class="text-brand-black font-semibold text-3xl tracking-[-2px]">5.0</p>
+
+                <div>
+                  <div class="flex items-center gap-1.25">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                  </div>
+                  <p class="text-brand-gray-3 text-sm leading-4 tracking-[0.13px] mt-1">480 отзывов</p>
+                </div>
+              </div>
+              <div class="w-[223px] bg-brand-gray-4 py-5 flex items-center justify-center gap-2.5 rounded-main outline-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <mask id="mask0_1_676" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.94122 0.0181811L11.6526 0L29.454 0.00727336C29.7243 0.0096976 29.8927 0.0133326 30.06 0.0181811C30.9424 0.0412114 31.8332 0.0921211 32.7059 0.248485C33.5801 0.395985 34.4276 0.672111 35.2209 1.06788C36.0112 1.46546 36.736 1.98424 37.3626 2.60606C37.9895 3.22492 38.5144 3.93924 38.9176 4.72242C39.3297 5.51879 39.5879 6.33455 39.7467 7.2097C39.9043 8.07273 39.9564 8.95273 39.9794 9.82546C39.9915 10.2255 39.9964 10.6255 39.9976 11.0267L40 11.7406V27.543C40 28.0182 40 28.4945 39.9976 28.9709C39.9952 29.3709 39.9915 29.7709 39.9794 30.1709C39.9552 31.0436 39.9043 31.9248 39.7467 32.7867C39.5971 33.6528 39.3176 34.4913 38.9176 35.2739C38.5141 36.0574 37.9893 36.772 37.3626 37.3915C36.7335 38.0131 36.0108 38.5322 35.2209 38.9297C34.4276 39.3255 33.5801 39.6017 32.7059 39.7491C31.8332 39.9042 30.9424 39.9552 30.06 39.9794L27.4008 40L10.546 39.9903C10.3444 39.9881 10.1428 39.9841 9.94122 39.9782C9.05884 39.9564 8.16799 39.9042 7.29531 39.7491C6.42153 39.6016 5.57441 39.3254 4.78153 38.9297C3.19441 38.1309 1.89987 36.8516 1.08236 35.2739C0.682963 34.4911 0.403495 33.6526 0.253318 32.7867C0.0957513 31.9248 0.0448453 31.0436 0.0218164 30.1721C0.00969596 29.7721 0.00606055 29.3709 0.00363646 28.9709L0 28.2545V12.4545C0 11.9794 3.14373e-07 11.503 0.00363646 11.0279C0.00606055 10.6279 0.010908 10.2279 0.0218164 9.82667C0.0460574 8.95394 0.0969634 8.07394 0.253318 7.21091C0.403405 6.34494 0.682878 5.50647 1.08236 4.72364C1.89868 3.14555 3.19302 1.86599 4.78032 1.06788C5.57361 0.672095 6.42113 0.395968 7.29531 0.248485C8.16799 0.0933332 9.05884 0.0424235 9.94122 0.0181811Z" fill="white"/>
+                  </mask>
+                  <g mask="url(#mask0_1_676)">
+                    <path d="M0 -0.00244141H39.9401V39.9401H0V-0.00244141Z" fill="#19AA1E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 -0.00244141H39.9401V13.1024L0 6.86221V-0.00244141Z" fill="#FFB919"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 35.5697L39.9401 29.3296V39.9388H0V35.5697Z" fill="#82D714"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.07324L13.9415 8.25173C15.6769 7.1528 17.7415 6.55009 19.9694 6.55009C23.0554 6.55009 25.8292 7.70589 27.8478 9.73431C28.102 9.99088 28.3416 10.2584 28.5679 10.5367L39.9401 12.3134V13.8928L29.7224 12.2952C30.4871 13.7573 30.8878 15.3823 30.8903 17.0322C30.8903 19.172 30.4122 21.3057 29.4223 23.4479L29.3932 23.5132L28.9721 24.4137H27.9797C25.9272 24.4137 24.567 25.0273 23.6763 26.1153C22.978 26.9685 22.5738 28.1207 22.4382 29.377L22.4334 29.4157L22.414 29.6166L22.4056 29.7037L22.3886 29.8744C22.3366 30.436 22.3027 30.9116 22.2845 31.2989L39.9401 28.5395V30.1189L0 36.3602V34.7808L17.6749 32.019L17.6676 31.6644L17.6652 31.5651L17.6628 31.5131L17.6604 31.4344C17.6447 31.0048 17.6047 30.4541 17.5418 29.786L17.5297 29.659L17.5079 29.4399C17.382 28.1764 16.9839 27.0109 16.2856 26.1443C15.4058 25.0491 14.0588 24.4258 12.0221 24.4137H10.9668L10.5469 23.5132C9.53755 21.3493 9.04863 19.1938 9.04863 17.0322C9.04863 14.314 10.1511 11.6853 12.0923 9.73431L12.2617 9.5685L0 7.65143V6.07324Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9694 8.10986C25.546 8.10986 29.3303 12.4015 29.3303 17.032C29.3303 18.8909 28.9249 20.825 27.9785 22.8534C22.4927 22.8534 21.1385 26.7819 20.8819 29.2557L20.865 29.4191C20.7791 30.3026 20.7282 31.0106 20.7149 31.5431L19.2288 31.7755V31.7271C19.2081 30.9405 19.1548 30.1552 19.0691 29.3731L19.0654 29.3295C18.8282 26.8618 17.5031 22.8534 11.9616 22.8534C11.014 20.825 10.6086 18.8909 10.6086 17.032C10.6086 12.4015 14.3941 8.10986 19.9694 8.10986Z" fill="#0073FA"/>
+                  </g>
+                </svg>
+
+                <p class="text-brand-black font-semibold text-3xl tracking-[-2px]">4.9</p>
+
+                <div>
+                  <div class="flex items-center gap-1.25">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M5.7488 0.485868C6.02432 -0.161956 6.97568 -0.161956 7.2512 0.485868L8.43819 3.27683C8.55482 3.55106 8.82202 3.73827 9.12851 3.7605L12.2478 3.9867C12.9718 4.03921 13.2658 4.91174 12.7121 5.36463L10.3264 7.31574C10.092 7.50745 9.98991 7.81036 10.0627 8.09833L10.8035 11.0291C10.9755 11.7094 10.2058 12.2486 9.58807 11.8807L6.92664 10.2956C6.66514 10.1398 6.33486 10.1398 6.07336 10.2956L3.41194 11.8807C2.79418 12.2486 2.02452 11.7094 2.19647 11.0291L2.9373 8.09833C3.01009 7.81036 2.90803 7.50745 2.67363 7.31574L0.287946 5.36463C-0.265805 4.91174 0.0281792 4.03921 0.75221 3.9867L3.87149 3.7605C4.17798 3.73827 4.44518 3.55106 4.56181 3.27683L5.7488 0.485868Z" fill="#F9D443"/>
+                    </svg>
+                  </div>
+                  <p class="text-brand-gray-3 text-sm leading-4 tracking-[0.13px] mt-1">480 отзывов</p>
+                </div>
+              </div>
+            </div>
+            <!-- feedbacks -->
+            <div class="grid grid-cols-2 gap-5">
+              <!-- 1 mapua -->
+              <div class="p-6 xl:p-7.5 rounded-main bg-white border border-[#E9E9F4]">
+                <div class="flex items-center gap-5">
+                  <div class="relative size-14 rounded-md overflow-hidden">
+                    <img class="absolute size-full object-cover" src="./src/assets/client-1.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="text-brand-black text-xl font-semibold leading-6.5">Mapua</h4>
+                    <p class="text-brand-gray-3 text-sm leading-5.5 tracking-[0.28px] opacity-80">Ремонт смартфона</p>
+                  </div>
+                </div>
+                <p class="text-brand-gray-3 leading-6 tracking-[0.32px] opacity-80 mt-5">
+                  Обратилась для замены экрана Ha Samsung — все сделали в сроки по приятной цене. Спасибо за отличное обслуживание. Рекомендую!
+                </p>
+              </div>
+              <!-- 2 Алексей -->
+              <div class="p-6 xl:p-7.5 rounded-main bg-white border border-[#E9E9F4]">
+                <div class="flex items-center gap-5">
+                  <div class="relative size-14 rounded-md overflow-hidden">
+                    <img class="absolute size-full object-cover" src="./src/assets/client-2.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="text-brand-black text-xl font-semibold leading-6.5">Алексей</h4>
+                    <p class="text-brand-gray-3 text-sm leading-5.5 tracking-[0.28px] opacity-80">Ремонт смартфона</p>
+                  </div>
+                </div>
+                <p class="text-brand-gray-3 leading-6 tracking-[0.32px] opacity-80 mt-5">
+                  Отличный сервис! Тачпад Ha ноутбуке починили быстро икачественно. Очень доволен работой специалистов.
+                </p>
+              </div>
+              <!-- 3 Валерия -->
+              <div class="p-6 xl:p-7.5 rounded-main bg-white border border-[#E9E9F4]">
+                <div class="flex items-center gap-5">
+                  <div class="relative size-14 rounded-md overflow-hidden">
+                    <img class="absolute size-full object-cover" src="./src/assets/client-3.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="text-brand-black text-xl font-semibold leading-6.5">Валерия</h4>
+                    <p class="text-brand-gray-3 text-sm leading-5.5 tracking-[0.28px] opacity-80">Ремонт смартфона</p>
+                  </div>
+                </div>
+                <p class="text-brand-gray-3 leading-6 tracking-[0.32px] opacity-80 mt-5">
+                  Ремонтировали мой ноутбук — все работает отлично. Цена и сроки полностью устроили. Обязательно вернусь при необходимости.
+                </p>
+              </div>
+              <!-- 4 mapua -->
+              <div class="p-6 xl:p-7.5 rounded-main bg-white border border-[#E9E9F4]">
+                <div class="flex items-center gap-5">
+                  <div class="relative size-14 rounded-md overflow-hidden">
+                    <img class="absolute size-full object-cover" src="./src/assets/client-4.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="text-brand-black text-xl font-semibold leading-6.5">Mapua</h4>
+                    <p class="text-brand-gray-3 text-sm leading-5.5 tracking-[0.28px] opacity-80">Ремонт смартфона</p>
+                  </div>
+                </div>
+                <p class="text-brand-gray-3 leading-6 tracking-[0.32px] opacity-80 mt-5">
+                  Обратилась для замены экрана Ha Samsung — все сделали в сроки по приятной цене. Спасибо за отличное обслуживание. Рекомендую!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Контактная информация -->
+      <section class="pb-30">
+        <div class="page-container">
+          <h2 class="text-brand-black-2 text-4xl font-semibold leading-normal tracking-[0.36px]">
+            Контактная информация
+          </h2>
+
+          <div class="w-full mt-10 flex items-start gap-7.5">
+            <div class="w-full max-w-100">
+              <div class="rounded-main bg-brand-gray-4 px-7.5 py-5">
+                <span class="text-brand-gray-3 text-sm leading-5.5 tracking-[0.28px] opacity-80">Телефон:</span>
+                <p class="text-brand-black text-2xl font-semibold mt-2.5">+7 (900) 123 45 67</p>
+              </div>
+
+              <div class="rounded-main bg-brand-gray-4 px-6 py-5 mt-2.5">
+                <span class="text-brand-gray-3 text-sm leading-5.5 tracking-[0.28px] opacity-80">Адрес:</span>
+                <p class="text-brand-black text-xl font-medium mt-2.5">
+                  Новосибирск, ул. Секретная, <br> д. 1, офис 200
+                </p>
+              </div>
+
+              <div class="flex items-center gap-2.5 mt-5">
+                <a href="#" aria-label="Telegram" class="size-15 rounded-main bg-brand-yellow flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.6498 0.15419C23.9742 0.017663 24.3292 -0.0294243 24.678 0.0178287C25.0267 0.0650817 25.3564 0.204948 25.6328 0.422869C25.9092 0.640791 26.122 0.9288 26.2493 1.25692C26.3766 1.58504 26.4136 1.94128 26.3565 2.28855L23.3794 20.3466C23.0906 22.0885 21.1794 23.0874 19.5819 22.2198C18.2456 21.4939 16.2609 20.3755 14.4757 19.2086C13.5831 18.6244 10.8489 16.7539 11.1849 15.4229C11.4737 14.2848 16.068 10.0082 18.6932 7.46563C19.7237 6.4667 19.2537 5.89045 18.0369 6.80931C15.0152 9.09068 10.1637 12.56 8.55962 13.5366C7.14459 14.3977 6.40688 14.5447 5.52478 14.3977C3.91548 14.1299 2.423 13.7151 1.20486 13.2098C-0.441196 12.5272 -0.361125 10.2642 1.20355 9.60524L23.6498 0.15419Z" fill="#0F172A"/>
+                  </svg>
+                </a>
+                <a href="#" aria-label="WhatsApp" class="size-15 rounded-main bg-brand-yellow flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                    <path d="M14.5 0C22.5084 0 29 6.2678 29 14C29 21.7322 22.5084 28 14.5 28C11.9375 28.0042 9.42006 27.3495 7.20652 26.103L0.00582241 28L1.96622 21.0448C0.674212 18.9069 -0.00446836 16.4752 2.21396e-05 14C2.21396e-05 6.2678 6.49167 0 14.5 0ZM9.55842 7.41999L9.26841 7.43119C9.08092 7.44367 8.89772 7.49122 8.72902 7.57119C8.5718 7.65731 8.42823 7.76481 8.30272 7.89039C8.12872 8.04859 8.03012 8.18579 7.92427 8.31879C7.38794 8.99206 7.09918 9.81863 7.10357 10.668C7.10647 11.354 7.29207 12.0218 7.58207 12.6462C8.17512 13.909 9.15096 15.246 10.4386 16.485C10.7489 16.7832 11.0534 17.0828 11.3811 17.3614C12.981 18.7213 14.8876 19.7021 16.9491 20.2258L17.7727 20.3476C18.0409 20.3616 18.3092 20.342 18.5789 20.3294C19.0011 20.3079 19.4133 20.1975 19.7867 20.006C19.9764 19.9113 20.1617 19.8085 20.3421 19.698C20.3421 19.698 20.4034 19.6579 20.5233 19.572C20.7191 19.432 20.8394 19.3326 21.0018 19.1688C21.1236 19.0475 21.2251 18.9065 21.3063 18.746C21.4194 18.5178 21.5325 18.0824 21.5789 17.7198C21.6137 17.4426 21.6036 17.2914 21.5992 17.1976C21.5934 17.0478 21.4644 16.8924 21.3237 16.8266L20.4798 16.4612C20.4798 16.4612 19.2183 15.9306 18.4469 15.5918C18.3662 15.5578 18.2797 15.5384 18.1917 15.5344C18.0925 15.5244 17.9922 15.5351 17.8976 15.5657C17.8031 15.5964 17.7164 15.6464 17.6436 15.7122C17.6364 15.7094 17.5392 15.7892 16.4909 17.0156C16.4307 17.0937 16.3478 17.1527 16.2528 17.1851C16.1577 17.2175 16.0549 17.2218 15.9573 17.1976C15.8628 17.1733 15.7702 17.1424 15.6803 17.1052C15.5005 17.0324 15.4382 17.0044 15.3149 16.954C14.4824 16.6039 13.7119 16.1301 13.0312 15.5498C12.8485 15.3958 12.6788 15.2278 12.5048 15.0654C11.9344 14.5379 11.4373 13.9412 11.0258 13.2902L10.9403 13.1572C10.8797 13.0673 10.8301 12.971 10.7924 12.8702C10.7373 12.6644 10.8808 12.4992 10.8808 12.4992C10.8808 12.4992 11.2332 12.1268 11.397 11.9252C11.5565 11.7292 11.6914 11.5388 11.7784 11.403C11.9495 11.137 12.0031 10.864 11.9132 10.6526C11.5072 9.69499 11.0877 8.74253 10.6546 7.79519C10.5691 7.60759 10.3153 7.47319 10.0848 7.44659C10.0065 7.43726 9.92816 7.42979 9.84986 7.42419C9.65517 7.41341 9.45995 7.41528 9.26551 7.42979L9.55842 7.41999Z" fill="#0F172A"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="relative flex-1 h-128 overflow-hidden rounded-main">
+              <iframe
+                class="absolute inset-0 size-full"
+                src="https://yandex.ru/map-widget/v1/?ll=82.934574%2C55.009011&z=12&pt=82.934574,55.009011,pm2rdm"
+                title="Карта Новосибирска"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Repair Срочный ремонт техники в Новосибирске -->
+      <section class="bg-[#222A3B] pt-12.5 pb-15">
+        <div class="page-container">
+          <div class="flex items-start justify-between">
+            <!-- left -->
+            <div>
+              <div class="flex flex-wrap items-start gap-3 sm:gap-4">
+                <div class="flex gap-1 shrink-0 items-baseline font-plus-jakarta-sans tracking-tight">
+                  <span class="text-white text-2xl font-extrabold">Tech</span>
+                  <span class="text-brand-red text-2xl font-semibold">Repair</span>
+                </div>
+                
+                <div class="text-sm font-inter leading-snug text-[#797D8E] tracking-[0.14px]">
+                  <p>Срочный ремонт техники</p>
+                  <p>в Новосибирске</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2.5 mt-5">
+                <a href="#" aria-label="Telegram" class="size-11 rounded-main bg-brand-red flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_1_786)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7767 4.42997C18.0238 4.32596 18.2943 4.29008 18.5599 4.32608C18.8256 4.36208 19.0768 4.46863 19.2873 4.63465C19.4979 4.80067 19.6601 5.02008 19.757 5.27005C19.854 5.52002 19.8822 5.79141 19.8387 6.05597L17.5707 19.813C17.3507 21.14 15.8947 21.901 14.6777 21.24C13.6597 20.687 12.1477 19.835 10.7877 18.946C10.1077 18.501 8.02465 17.076 8.28065 16.062C8.50065 15.195 12.0007 11.937 14.0007 9.99997C14.7857 9.23897 14.4277 8.79997 13.5007 9.49997C11.1987 11.238 7.50265 13.881 6.28065 14.625C5.20265 15.281 4.64065 15.393 3.96865 15.281C2.74265 15.077 1.60565 14.761 0.677653 14.376C-0.576346 13.856 -0.515346 12.132 0.676654 11.63L17.7767 4.42997Z" fill="#0F172A"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_786">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="#" aria-label="WhatsApp" class="size-11 rounded-main bg-brand-red flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12.001 2C17.524 2 22.001 6.477 22.001 12C22.001 17.523 17.524 22 12.001 22C10.2337 22.003 8.49757 21.5353 6.97099 20.645L2.00499 22L3.35699 17.032C2.46595 15.5049 1.99789 13.768 2.00099 12C2.00099 6.477 6.47799 2 12.001 2ZM8.59299 7.3L8.39299 7.308C8.26368 7.31691 8.13734 7.35087 8.02099 7.408C7.91257 7.46951 7.81355 7.5463 7.72699 7.636C7.60699 7.749 7.53899 7.847 7.46599 7.942C7.09611 8.4229 6.89696 9.01331 6.89999 9.62C6.90199 10.11 7.02999 10.587 7.22999 11.033C7.63899 11.935 8.31199 12.89 9.19999 13.775C9.41399 13.988 9.62399 14.202 9.84999 14.401C10.9534 15.3724 12.2683 16.073 13.69 16.447L14.258 16.534C14.443 16.544 14.628 16.53 14.814 16.521C15.1052 16.5056 15.3895 16.4268 15.647 16.29C15.7778 16.2223 15.9056 16.1489 16.03 16.07C16.03 16.07 16.0723 16.0413 16.155 15.98C16.29 15.88 16.373 15.809 16.485 15.692C16.569 15.6053 16.639 15.5047 16.695 15.39C16.773 15.227 16.851 14.916 16.883 14.657C16.907 14.459 16.9 14.351 16.897 14.284C16.893 14.177 16.804 14.066 16.707 14.019L16.125 13.758C16.125 13.758 15.255 13.379 14.723 13.137C14.6673 13.1128 14.6077 13.0989 14.547 13.096C14.4786 13.0888 14.4094 13.0965 14.3442 13.1184C14.279 13.1403 14.2192 13.176 14.169 13.223C14.164 13.221 14.097 13.278 13.374 14.154C13.3325 14.2098 13.2753 14.2519 13.2098 14.2751C13.1443 14.2982 13.0733 14.3013 13.006 14.284C12.9408 14.2666 12.877 14.2446 12.815 14.218C12.691 14.166 12.648 14.146 12.563 14.11C11.9889 13.8599 11.4574 13.5215 10.988 13.107C10.862 12.997 10.745 12.877 10.625 12.761C10.2316 12.3842 9.88874 11.958 9.60499 11.493L9.54599 11.398C9.50425 11.3338 9.47003 11.265 9.44399 11.193C9.40599 11.046 9.50499 10.928 9.50499 10.928C9.50499 10.928 9.74799 10.662 9.86099 10.518C9.97099 10.378 10.064 10.242 10.124 10.145C10.242 9.955 10.279 9.76 10.217 9.609C9.93699 8.925 9.64766 8.24467 9.34899 7.568C9.28999 7.434 9.11499 7.338 8.95599 7.319C8.90199 7.31233 8.84799 7.307 8.79399 7.303C8.65972 7.2953 8.52508 7.29664 8.39099 7.307L8.59299 7.3Z" fill="#0F172A"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- right -->
+            <div class="flex items-start">
+              <div>
+                <h3 class="text-white/50 text-lg font-semibold tracking-[0.18px]">Ремонт техники</h3>
+                <ul class="grid grid-cols-2 gap-x-17.5 gap-y-3.5 mt-5">
+                  <li><a href="#smartphones" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Смартфоны</a></li>
+                  <li><a href="#computers" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Компьютеры</a></li>
+                  <li><a href="#laptops" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Ноутбуки</a></li>
+                  <li><a href="#consoles" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Приставки</a></li>
+                  <li><a href="#tablets" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Планшеты</a></li>
+                  <li><a href="#smartwatches" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Умные часы</a></li>
+                  <li><a href="#monoblocks" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Моноблоки</a></li>
+                  <li><a href="#vacuums" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Пылесосы</a></li>
+                </ul>
+              </div>
+
+              <div class="pl-24 xl:pl-30">
+                <h3 class="text-white/50 text-lg font-semibold tracking-[0.18px]">Информация</h3>
+                <ul class="space-y-3.5 mt-5">
+                  <li><a href="#about" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">О компании</a></li>
+                  <li><a href="#promotions" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Акции</a></li>
+                  <li><a href="#reviews" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Отзывы</a></li>
+                  <li><a href="#contacts" class="text-white tracking-[0.32px] font-medium transition hover:text-brand-red">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-[#0B101C] py-12.5">
+      <div class="page-container">
+        <div>
+          <p class="text-white/50 text-lg tracking-[0.18px]">Контакты</p>
+          <div class="flex items-center gap-12.5 mt-5">
+            <div>
+              <div class="flex items-center gap-2">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.04724 0.9375H5.86049C5.97491 0.9375 6.0866 0.972391 6.18068 1.03752C6.27475 1.10264 6.34672 1.19491 6.38699 1.302L7.47899 4.2045C7.51499 4.30049 7.52406 4.40448 7.50524 4.50525L6.95774 7.43925C7.63049 9.02025 8.74124 10.083 10.5825 11.0363L13.4812 10.4738C13.5843 10.4539 13.6908 10.4633 13.7887 10.5008L16.7002 11.6108C16.8067 11.6513 16.8983 11.7232 16.963 11.8169C17.0277 11.9107 17.0624 12.0219 17.0625 12.1357V14.8237C17.0625 16.0432 15.9885 17.0325 14.7315 16.7587C12.4417 16.2607 8.19899 14.994 5.22749 12.0225C2.38049 9.17625 1.42649 5.24475 1.10624 3.12C0.922494 1.9065 1.89524 0.9375 3.04724 0.9375Z" fill="#FE5364"/>
+                  </svg>
+                </span>
+                <p class="text-white text-[22px] font-semibold leading-normal">+7 (900) 123 45 67</p>
+              </div>
+              <a href="tel:+79001234567" class="text-brand-red font-medium tracking-[0.18px]">Заказать звонок</a>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-2">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
+                    <path d="M5.92917 16.8631C6.43417 17.2683 6.96083 17.6386 7.5 18C8.04033 17.6434 8.56444 17.2641 9.07083 16.8631C9.915 16.1892 10.7095 15.4584 11.4483 14.6761C13.1517 12.8651 15 10.2398 15 7.2927C15 6.33501 14.806 5.38669 14.4291 4.5019C14.0522 3.61711 13.4997 2.81317 12.8033 2.13598C12.1069 1.45879 11.2801 0.921616 10.3701 0.555124C9.46018 0.188631 8.48491 0 7.5 0C6.51509 0 5.53982 0.188631 4.62987 0.555124C3.71993 0.921616 2.89314 1.45879 2.1967 2.13598C1.50026 2.81317 0.947814 3.61711 0.570903 4.5019C0.193993 5.38669 -1.46764e-08 6.33501 0 7.2927C0 10.2398 1.84833 12.8643 3.55167 14.6761C4.29052 15.4586 5.08497 16.1889 5.92917 16.8631ZM7.5 9.92617C6.78171 9.92617 6.09283 9.64872 5.58492 9.15485C5.07701 8.66097 4.79167 7.99114 4.79167 7.2927C4.79167 6.59426 5.07701 5.92442 5.58492 5.43055C6.09283 4.93668 6.78171 4.65922 7.5 4.65922C8.21829 4.65922 8.90717 4.93668 9.41508 5.43055C9.92299 5.92442 10.2083 6.59426 10.2083 7.2927C10.2083 7.99114 9.92299 8.66097 9.41508 9.15485C8.90717 9.64872 8.21829 9.92617 7.5 9.92617Z" fill="#FE5364"/>
+                  </svg>
+                </span>
+                <p class="text-white text-[22px] font-semibold leading-normal tracking-[0.2px]">Новосибирск</p>
+              </div>
+              <p class="text-[#797D8E] tracking-[0.16px]">ул. Секретная, д. 1, офис 200</p>
+            </div>
+
+            <a href="#order" class="bg-brand-gradient flex items-center justify-between rounded-main w-63 py-2.5 pl-7.5 pr-2.5 shrink-0">
+              <span class="text-brand-black font-bold">Заказать ремонт</span>
+              <span class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                  <rect width="36" height="36" rx="3" fill="white"/>
+                  <path d="M16 12L22 18L16 24" stroke="black" stroke-width="2"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="h-px bg-[#222A3B] mt-16 mb-7"></div>
+
+        <div class="flex items-center justify-between gap-6">
+          <p class="text-[#797D8E] text-sm tracking-[0.14px] leading-5">© 2025 Все права защищены</p>
+          <div class="flex items-center gap-12.5">
+            <a href="#" class="text-[#797D8E]  text-sm tracking-[0.14px] leading-5 hover:text-brand-red transition">Политика конфиденциальности</a>
+            <p class="text-[#797D8E]  text-sm tracking-[0.14px] leading-5">Разработка сайта - <a href="#" class="text-brand-red hover:underline">Pictus</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
